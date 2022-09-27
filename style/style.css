@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #171933;
+    --secondary-color: #FFEFCA;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font: ;
+
+}
+
+header {
+    height: 15vh;
+    border-bottom: 1px solid white;
+    display: flex;
+}
+
+header img {
+    height: 100%;
+}
+
+header ul {
+    list-style: none;
+}
+
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: ;
+}
+
+main {
+    min-height: 75vh;
+}
+
+footer {
+    height: 10vh;
+}
