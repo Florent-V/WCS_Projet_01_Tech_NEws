@@ -6,7 +6,6 @@
     --spacing-2 : calc(var(--spacing-1)*2);
     --spacing-3 : calc(var(--spacing-1)*3);
     --spacing-4 : calc(var(--spacing-1)*4);
-
 }
 
 * {
@@ -17,14 +16,14 @@
 
 body {
     background : 
-    linear-gradient(rgba(23, 25, 51, 0.99), rgba(23, 25, 51, 0.99)
-    ) fixed no-repeat center,
-    url(../img/logo.png) fixed no-repeat center;
-
-    //background: linear-gradient(rgba(23,25,51,0.5) 0%, rgba(23,25,51,0.5) 100%),
-        url(./img/logo.png);
+        linear-gradient(rgba(23, 25, 51, 0.99), rgba(23, 25, 51, 0.99)) fixed no-repeat center,
+        url(../img/logo.png) fixed no-repeat center;
     font: ;
 }
+
+/*##################################################*/
+/*                  HEADER                          */
+/* #################################################*/
 
 header {
     height: 15vh;
@@ -58,9 +57,18 @@ header a {
     font-size: 2rem;
 }
 
+/*##################################################*/
+/*                        MAIN                      */
+/* #################################################*/
+
 main {
     min-height: 75vh;
 }
+
+
+/*##################################################*/
+/*                       FOOTER                     */
+/* #################################################*/
 
 footer {
     height: 10vh;
