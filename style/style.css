@@ -18,7 +18,7 @@ body {
     background : 
         linear-gradient(rgba(23, 25, 51, 0.99), rgba(23, 25, 51, 0.99)) fixed no-repeat center,
         url(../img/logo.png) fixed no-repeat center;
-    font: ;
+    font-family: Ubuntu, sans-serif;
 }
 
 /*##################################################*/
@@ -64,6 +64,7 @@ header a {
 main {
     min-height: 75vh;
     color: white;
+    padding: var(--spacing-2) 0;
 
 }
 

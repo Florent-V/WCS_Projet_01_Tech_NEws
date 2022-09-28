@@ -21,38 +21,126 @@
             <h1>Article à la Une</h1>
             <p>Découvrez les dernières news tech !</p>
         </section>
+
+
         <article>
-            <img src="" alt="">
             <h1>Comment bien réaliser sa veille Tech !</h1>
             <i class="fa-solid fa-graduation-cap"></i>
-            <p class="description">Découvrer ici comment faire votre veille tech ! Dans ce domaine en constante évolution,
-                il est nécessaire de mettre en permanence ces connaissances en phase avec les dernières nouveautés
-                au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
-                Tenant compte de cette problèmatique, cet article est là pour vous aider !
+            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
+                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
+                Cet article est là pour vous aider !
             </p>
             <div class=author>
                 <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
                 <p>Florent Vasseur</p>
-                <p><span>10 SEPT 2022</span><i style="font-size:0.3rem" class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
+                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
             </div>
   
 
-            <p class='infos'>
+            <p class='social'>
                 <span><i class="fa-regular fa-bookmark"></i></span>
                 <span><i class="fa-regular fa-message"></i> 5 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
                 <span><i class="fa-solid fa-share-nodes"></i></span>
             </p>
-
-
         </article>
 
 
 
-        <article></article>
-        <article></article>
-        <article></article>
-        <article>        </article>
+
+
+
+
+
+
+        
+
+        <article>
+            <h1>Comment bien réaliser sa veille Tech !</h1>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
+                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
+                Cet article est là pour vous aider !
+            </p>
+            <div class=author>
+                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
+                <p>Florent Vasseur</p>
+                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
+            </div>
+  
+
+            <p class='social'>
+                <span><i class="fa-regular fa-bookmark"></i></span>
+                <span><i class="fa-regular fa-message"></i> 5 </span>
+                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
+                <span><i class="fa-solid fa-share-nodes"></i></span>
+            </p>
+        </article>
+        <article>
+            <h1>Comment bien réaliser sa veille Tech !</h1>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
+                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
+                Cet article est là pour vous aider !
+            </p>
+            <div class=author>
+                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
+                <p>Florent Vasseur</p>
+                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
+            </div>
+  
+
+            <p class='social'>
+                <span><i class="fa-regular fa-bookmark"></i></span>
+                <span><i class="fa-regular fa-message"></i> 5 </span>
+                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
+                <span><i class="fa-solid fa-share-nodes"></i></span>
+            </p>
+        </article>
+
+        <article>
+            <h1>Comment bien réaliser sa veille Tech !</h1>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
+                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
+                Cet article est là pour vous aider !
+            </p>
+            <div class=author>
+                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
+                <p>Florent Vasseur</p>
+                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
+            </div>
+  
+
+            <p class='social'>
+                <span><i class="fa-regular fa-bookmark"></i></span>
+                <span><i class="fa-regular fa-message"></i> 5 </span>
+                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
+                <span><i class="fa-solid fa-share-nodes"></i></span>
+            </p>
+        </article>
+
+        <article>
+            <h1>Comment bien réaliser sa veille Tech !</h1>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
+                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
+                Cet article est là pour vous aider !
+            </p>
+            <div class=author>
+                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
+                <p>Florent Vasseur</p>
+                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
+            </div>
+  
+
+            <p class='social'>
+                <span><i class="fa-regular fa-bookmark"></i></span>
+                <span><i class="fa-regular fa-message"></i> 5 </span>
+                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
+                <span><i class="fa-solid fa-share-nodes"></i></span>
+            </p>
+        </article>
 
 
     </main>
