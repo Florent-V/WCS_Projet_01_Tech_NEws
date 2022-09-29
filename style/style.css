@@ -18,16 +18,26 @@ body {
     background : 
         linear-gradient(rgba(23, 25, 51, 0.99), rgba(23, 25, 51, 0.99)) fixed no-repeat center,
         url(../img/logo.png) fixed no-repeat center;
-    font: ;
+    font-family: Ubuntu, sans-serif;
+    padding: 0 var(--spacing-2);
+
+}
+
+@media screen and (min-width:1000px) {
+    body {
+        width: min(80%, 1300px);
+        margin: auto;
+        padding: 0;
+    }
+    
 }
 
 /*##################################################*/
 /*                  HEADER                          */
-/* #################################################*/
+/*##################################################*/
 
 header {
     height: 15vh;
-    
     border-bottom: 1px solid white;
     display: flex;
     justify-content: center;
@@ -36,7 +46,6 @@ header {
 }
 
 header, footer {
-    width: 80%;
     margin: auto;
 }
 
@@ -63,8 +72,9 @@ header a {
 
 main {
     min-height: 75vh;
+    color: white;
+    padding: var(--spacing-2) 0;
 }
-
 
 /*##################################################*/
 /*                       FOOTER                     */
