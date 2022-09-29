@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech News to Watch</title>
     <link rel="stylesheet" href="./style/style.css">
-</head>
+    </head>
 <body>
-    <header>
-
-
-    </header>
+    <?php 
+        include '_header.php';
+    ?>
+    
+    
     <main>
 
     </main>
-    <footer>
 
-    </footer>
+    <?php 
+        include '_footer.php';
+    ?>
+    
     
 </body>
 </html>
