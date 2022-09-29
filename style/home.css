@@ -7,15 +7,21 @@
 main {
     min-height: 75vh;
     color: white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-4);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 778px) {
     main {
-        width: 80%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: var(--spacing-4);
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
     }
 }
 
