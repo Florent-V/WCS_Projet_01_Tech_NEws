@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" />
+    <link rel="stylesheet" href="publication.css">
 </head>
 <body>
     <?php 
