@@ -19,21 +19,22 @@ include '_header.php';
   <section class="bandeau"></section>
 
   <section class="boxFormulaire">
-    <form>                        
-      <h3>Contact us</h3>
+    <form method= "post" action="traitement.php">                        
+        <h3>Contact us</h3>
+
+      <div class="namesBox">
+            <label for="name">First name:</label><br />
+            <input type="text" id="fname"name="firstane" placeholder="Your First name" required>
+            <label for="name">Last name:</label><br />
+            <input type="lastName" placeholder="lastName" />
+      </div>
 
       <div class="formulaire">
-        <input type="email" placeholder="@" />
-
         <input type="text" placeholder="" />
-
-        <input type="text" placeholder="" />
-
-        <textarea placeholder="Your message"></textarea>
+        <textarea placeholder="Your message" rows="10" cols="40"></textarea>
       </div> 
     </form>
   </section>
-
 </main>
   <?php include 
      '_footer.php';

@@ -10,8 +10,15 @@
     max-height: 90%;
   }
 
+.namesBox {
+    
+    margin: 0 auto;
+    margin-bottom: 15px;
+    max-width: 90%;
+    max-height: 90%;
+}
 .bandeau {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     min-height: 400px;
@@ -33,3 +40,11 @@
     max-width: 60%;
     z-index:2;
 }
+form h3 {
+    color: blanchedalmond;
+}
+
+.email {
+width: 30px;
+}
+
