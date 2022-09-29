@@ -1,0 +1,86 @@
+
+/*##############################################"*/
+/*                   Article                     */
+/*##############################################"*/
+
+article h1 {
+    text-align: center;
+    margin-bottom: var(--spacing-2);
+}
+
+article .author {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: var(--spacing-2);
+}
+
+article .author img {
+    max-width: 90%;
+    max-height: 90%;
+    aspect-ratio: 1/1;
+    grid-row: 1/-1;
+    margin: auto;
+}
+
+article .author .fa-solid {
+    font-size: 0.3rem;
+}
+
+.author p:first-of-type {
+    margin: auto 0 var(--spacing-1);
+}
+
+.author p:last-of-type {
+    margin: var(--spacing-1) 0 auto;
+}
+
+.author .infos {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+}
+
+article hr {
+    width: 80%;
+    margin: var(--spacing-3) auto;
+}
+
+article>p {
+    line-height: 1.5;
+    margin: var(--spacing-1) 0;
+    text-indent: var(--spacing-4);
+}
+
+
+/*##############################################"*/
+/*                   Comment                     */
+/*##############################################"*/
+
+.comment hr {
+    margin: var(--spacing-1) 0;
+}
+
+.comment label, .comment button {
+    display: block;
+    margin: var(--spacing-2) 0 var(--spacing-1);
+}
+
+.comment input, .comment textarea {
+    padding: var(--spacing-1);
+    font-size: 1rem;
+}
+
+.comment textarea {
+    width: 100%;
+}
+
+.comment button {
+    padding: var(--spacing-1) var(--spacing-3);
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}

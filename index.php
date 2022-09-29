@@ -18,7 +18,7 @@
     
     <main>
         <section>
-            <h1>Article à la Une</h1>
+            <h1>Article à la <a href="article.php">Une</a></h1>
             <p>Découvrez les dernières news tech !</p>
         </section>
 
@@ -30,7 +30,7 @@
                 onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
                 Cet article est là pour vous aider !
             </p>
-            <div class=author>
+            <div class='author'>
                 <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
                 <p>Florent Vasseur</p>
                 <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
@@ -46,16 +46,7 @@
         </article>
 
 
-
-
-
-
-
-
-
-        
-
-        <article>
+               <article>
             <h1>Comment bien réaliser sa veille Tech !</h1>
             <i class="fa-solid fa-graduation-cap"></i>
             <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
@@ -63,9 +54,9 @@
                 Cet article est là pour vous aider !
             </p>
             <div class=author>
-                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
-                <p>Florent Vasseur</p>
-                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
+                <img src="./img/profile_pic_jess.png" alt="Photo de profil de l'auteur">
+                <p>Jessica Pecheux Vasseur</p>
+                <p class="infos"><span>15 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>5 MIN READ</span></p>
             </div>
   
 
@@ -84,9 +75,9 @@
                 Cet article est là pour vous aider !
             </p>
             <div class=author>
-                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
-                <p>Florent Vasseur</p>
-                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
+                <img src="./img/profile_pic_maxence.png" alt="Photo de profil de l'auteur">
+                <p>Maxence Hattabi Vasseur</p>
+                <p class="infos"><span>25 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>3 MIN READ</span></p>
             </div>
   
 
