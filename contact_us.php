@@ -31,7 +31,7 @@ include '_header.php';
 
       <div class="formulaire">
         <input type="text" placeholder="" />
-        <textarea placeholder="Your message" rows="10" cols="40"></textarea>
+        <textarea placeholder="Your message" rows="30" cols="40"></textarea>
       </div> 
     </form>
   </section>
