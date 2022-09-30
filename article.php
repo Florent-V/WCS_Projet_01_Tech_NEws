@@ -51,22 +51,33 @@
 
         </article>
 
-        <section class="comment">
+        <section class="comment-form">
             <h2>5 commentaires</h2>
             <hr>
             <form action="">
                 <div>
                     <label for="name">Nom</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
                 </div>
                 <div>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" required rows="10"></textarea>
                 </div>
 
-                <button>Envoyer</button>
-                
+                <button>
+                    <span>Envoyer</span>
+                </button>
+
             </form>
+        </section>
+
+        <section class="comments">
+            <div class="comment-infos">
+                <img src="./img/default.png" alt="photo de profil">
+                <span class="pseudo">User Number 1</span>
+                <span class="date">Il y a <span class="date">15</span> jours</span>
+
+            </div>
 
 
         </section>

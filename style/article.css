@@ -58,29 +58,87 @@ article>p {
 /*                   Comment                     */
 /*##############################################"*/
 
-.comment hr {
+.comment-form hr {
     margin: var(--spacing-1) 0;
 }
 
-.comment label, .comment button {
+.comment-form label, .comment-form button {
     display: block;
     margin: var(--spacing-2) 0 var(--spacing-1);
 }
 
-.comment input, .comment textarea {
+.comment-form input, .comment-form textarea {
     padding: var(--spacing-1);
     font-size: 1rem;
 }
 
-.comment textarea {
+.comment-form textarea {
     width: 100%;
 }
 
-.comment button {
+.comment-form button {
     padding: var(--spacing-1) var(--spacing-3);
-    background: none;
-    border: 2px solid #fff;
+    position: relative;
+    background: hsl(236,38%,8%);
+    border: none;
+    cursor: pointer;
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
 }
+
+button::before, 
+button::after {
+    content: "";
+    width:0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #54e6e7;
+}
+
+span::before, 
+span::after {
+    content: "";
+    width:2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #54e6e7;
+}
+
+button:hover::before, 
+button:hover::after {
+    width: 100%;
+}
+
+button:hover span::before, 
+button:hover span::after {
+    height: 100%;
+}
+
+button::after {
+    right:0;
+    bottom:0;
+    transition-duration: 0.4s;
+}
+
+button span::after {
+    right:0;
+    bottom:0;
+    transition-duration: 0.4s;
+}
+
+button::before {
+    left:0;
+    top:0;
+    transition-duration: 0.4s;
+}
+
+button span::before {
+    left:0;
+    top:0;
+    transition-duration: 0.4s;
+}
+
+

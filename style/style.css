@@ -12,7 +12,9 @@
     --box-shadow-2 : 10px 5px 5px var(--secondary-color);
 }
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
