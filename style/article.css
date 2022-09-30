@@ -1,0 +1,155 @@
+
+/*##############################################"*/
+/*                   Article                     */
+/*##############################################"*/
+
+article h1 {
+    text-align: center;
+    margin-bottom: var(--spacing-2);
+}
+
+article .author, 
+.comments .comment-infos {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: var(--spacing-2);
+}
+
+article .author img,
+.comments img {
+    max-width: 90%;
+    max-height: 90%;
+    aspect-ratio: 1/1;
+    grid-row: 1/-1;
+    margin: auto;
+}
+
+article .author .fa-solid {
+    font-size: 0.3rem;
+}
+
+.author p:first-of-type,
+.comments span:first-of-type {
+    margin: auto 0 var(--spacing-1);
+}
+
+.author p:last-of-type,
+.comments span:last-of-type  {
+    margin: var(--spacing-1) 0 auto;
+}
+
+.author .infos {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+}
+
+article hr {
+    width: 80%;
+    margin: var(--spacing-3) auto;
+}
+
+article>p {
+    line-height: 1.5;
+    margin: var(--spacing-1) 0;
+    text-indent: var(--spacing-4);
+}
+
+
+/*##############################################"*/
+/*                 FORM-COMMENT                  */
+/*##############################################"*/
+
+.comment-form hr {
+    margin: var(--spacing-1) 0;
+}
+
+.comment-form label, .comment-form button {
+    display: block;
+    margin: var(--spacing-2) 0 var(--spacing-1);
+}
+
+.comment-form input, .comment-form textarea {
+    padding: var(--spacing-1);
+    font-size: 1rem;
+}
+
+.comment-form textarea {
+    width: 100%;
+}
+
+.comment-form button {
+    padding: var(--spacing-1) var(--spacing-3);
+    position: relative;
+    background: hsl(236,38%,8%);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+button::before, 
+button::after {
+    content: "";
+    width:0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #54e6e7;
+}
+
+span::before, 
+span::after {
+    content: "";
+    width:2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #54e6e7;
+}
+
+button:hover::before, 
+button:hover::after {
+    width: 100%;
+}
+
+button:hover span::before, 
+button:hover span::after {
+    height: 100%;
+}
+
+button::after {
+    right:0;
+    bottom:0;
+    transition-duration: 0.4s;
+}
+
+button span::after {
+    right:0;
+    bottom:0;
+    transition-duration: 0.4s;
+}
+
+button::before {
+    left:0;
+    top:0;
+    transition-duration: 0.4s;
+}
+
+button span::before {
+    left:0;
+    top:0;
+    transition-duration: 0.4s;
+}
+
+
+/*##############################################"*/
+/*                    COMMENT                    */
+/*##############################################"*/
+
+.comments img {
+    border-radius: 50%;
+}
