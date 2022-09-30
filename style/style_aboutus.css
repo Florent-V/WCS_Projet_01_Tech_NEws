@@ -10,16 +10,16 @@ main {
     line-height: 1.5em;
 }
 h1{
-    color: var(--secondary-color);
+    color: white;
     font-size: 3rem;
     text-align: center;
     margin-top: 4%;
     margin-bottom: 4%;
-    text-decoration: underline var(--secondary-color);
+    text-decoration: underline white;
 
 }
 section {
-    color : var(--secondary-color);
+    color : white;
 }
 
 p{
@@ -30,7 +30,14 @@ p{
 
 img {
     border-radius: 50%;
+    opacity: 1;
+    
+    
 
+}
+img:hover{
+    opacity: 0.2;
+    
 }
 
 
@@ -46,11 +53,11 @@ img {
     gap: var(--spacing-3) ;
 }
 
-.florentv > h2{
+.florentv > h2 {
     grid-area: h;
     margin-left: 60% ;
 }
-.florentv > p{
+.florentv > p {
     grid-area: p;
     margin: auto;
     padding: var(--spacing-3);
@@ -60,11 +67,29 @@ img {
     grid-area: img;
     margin: auto ;
     margin-left: 50%;
-    align-self: center;
     max-width: 45%;
     box-shadow: var(--box-shadow-1);
 
 }
+
+.unsurdeux{
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+    font-size: 2em;
+
+}
+
+.deuxsurdeux{
+    display: flex;
+    justify-content: start;
+    gap: 2em;
+    font-size: 2em;
+
+
+}
+
 
 /* TEXTE ET IMAGE JESSICA */
 
@@ -77,7 +102,7 @@ img {
     margin-top: var(--spacing-4);
     gap: var(--spacing-3) ;
 }
-.jessicap > p{
+.jessicap > p {
     grid-area: p;
     margin: auto;
     padding: var(--spacing-3);
@@ -107,11 +132,11 @@ img {
     gap: var(--spacing-3) ;
 }
 
-.alexandred > h2{
+.alexandred > h2 {
     grid-area: h;
     margin-left: 60% ;
 }
-.alexandred > p{
+.alexandred > p {
     grid-area: p;
     margin: auto;
     padding: var(--spacing-3);
@@ -136,12 +161,13 @@ img {
     text-align: end;
     margin-top: var(--spacing-4);
     gap: var(--spacing-3) ;
-    margin-bottom: var(--spacing-4);
+    
 }
-.maxenceh > p{
+.maxenceh > p {
     grid-area: p;
     margin: auto;
     padding: var(--spacing-3);
+    
 }
 .maxenceh > h2 {
     grid-area: h;
@@ -176,34 +202,57 @@ footer p:last-of-type {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 360px) {
+
+
+@media screen and (max-width: 900px){
+    *{
+        max-width: none;
+    }
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
     h1{
         display: flex;
-        justify-content: center;
+        
         font-size: 2em;
         margin-left: 30%;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 900px) {
     .florentv{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin: auto;
     
         
     }
 }
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 900px) {
+    .florentv > h2 {
+        margin: auto;
+    
+        
+    }
+}
+@media screen and (max-width: 900px) {
     .florentv > p {
-        margin-left: 30%;
+        margin-left: 0;
         text-align: justify;
         padding: 0;
     }
 }
 
+@media screen and (max-width: 900px){
+    .florentv > img {
+        margin-left: auto;
+    }
+}
 
-@media screen and (max-width: 360px) {
+
+/* MEDIA QUERIES JESSICA */
+@media screen and (max-width: 900px) {
     .jessicap{
         display: flex;
         flex-direction: column;
@@ -212,30 +261,30 @@ footer p:last-of-type {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 900px) {
     .jessicap > p {
-        margin-left: 30%;
+        margin-left: 0;
         text-align: justify;
         padding: 0;
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 900px) {
     .jessicap > h2 {
-        margin-right: 12%;
+        margin: auto;
     }
     
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 900px) {
     .jessicap > img {
-        margin-right: 12%;
+        margin-right: auto;
     }
     
 }
 
 
-
-@media screen and (max-width: 360px) {
+/* MEDIA QUERIES ALEXANDRE */
+@media screen and (max-width: 900px) {
     .alexandred{
         display: flex;
         flex-direction: column;
@@ -243,12 +292,56 @@ footer p:last-of-type {
         
     }
 }
+@media screen and (max-width: 900px) {
+    .alexandred > h2 {
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width: 900px){
+    .alexandred > img {
+        margin-left: auto;
+    }
+}
 
-@media screen and (max-width: 360px) {
+
+@media screen and (max-width: 900px) {
     .alexandred > p {
-        margin-left: 30%;
+        margin-left: 0;
         text-align: justify;
         max-width: 100%;
         padding: 0;
     }
 }
+
+
+
+/* MEDIA QUERIES MAXENCE */
+@media screen and (max-width: 900px) {
+    .maxenceh{
+        display: flex;
+        flex-direction: column;
+    
+        
+    }
+}
+@media screen and (max-width: 900px) {
+    .maxenceh > h2 {
+        margin: auto;
+    }   
+}
+@media screen and (max-width: 900px) {
+    .maxenceh > p {
+        margin-left: 0;
+        text-align: justify;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .maxenceh > img {
+        margin-right: auto;
+    }
+    
+}
+
