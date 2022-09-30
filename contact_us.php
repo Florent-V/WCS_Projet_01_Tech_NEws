@@ -17,25 +17,47 @@ include '_header.php';
 ?>
 <main>
   <section class="bandeau"></section>
+  <h1>Formulaire de contact</h1>
+    <p>Pour toutes questions, demandes ou suggestions veuillez utiliser ce formulaire pour nous contacter. <br />
+      Réponse rapide assurée !
+    </p>
 
   <section class="boxFormulaire">
-    <form method= "post" action="traitement.php">                        
-        <h3>Contact us</h3>
 
-      <div class="namesBox">
-            <label for="name">First name:</label><br />
-            <input type="text" id="fname"name="firstane" placeholder="Your First name" required>
-            <label for="name">Last name:</label><br />
-            <input type="lastName" placeholder="lastName" />
-      </div>
+    
+    <fieldset>
+      <legend>Contactez-nous</legend>
 
-      <div class="formulaire">
-        <input type="text" placeholder="" />
-        <textarea placeholder="Your message" rows="30" cols="40"></textarea>
-      </div> 
-    </form>
+      <form class="formBox" method= "post" action="traitement.php">                        
+        <div class="namesBox">
+
+          <div class="formElements"><label for="name">Prénom:</label><br />
+            <input type="text" id="fname"name="firstane" placeholder="Votre prénom" required>
+          </div>
+
+          <div class="formElements">
+            <label for="name">Nom:</label><br />
+            <input type="lastName" placeholder="Votre nom" />
+          </div>
+
+        </div>
+
+          <div class="formElements">
+            <label for="email">Email</label><br />
+            <input type="text" id="email"name=email placeholder="@" required>
+          </div>
+
+          <div class="formElements">
+            <label for="Text">Your message</label><br />
+            <textarea  placeholder="Your message" ></textarea></textarea><br />
+            <input type="submit" class="button">
+          </div> 
+
+      </form>
+    </fieldset>
   </section>
 </main>
+
   <?php include 
      '_footer.php';
   ?>
