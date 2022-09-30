@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech News to Watch</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/article.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" />
@@ -74,10 +75,10 @@
         <section class="comments">
             <div class="comment-infos">
                 <img src="./img/default.png" alt="photo de profil">
-                <span class="pseudo">User Number 1</span>
-                <span class="date">Il y a <span class="date">15</span> jours</span>
-
+                <span class="comment-pseudo">User Number 1</span>
+                <span class="comment-date">Il y a <span class="date">15</span> jours</span>
             </div>
+            <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
 
 
         </section>
