@@ -53,7 +53,7 @@
         </article>
 
         <section class="comment-form">
-            <h2>5 commentaires</h2>
+            <h2>3 commentaires</h2>
             <hr>
             <form action="">
                 <div>
@@ -72,15 +72,31 @@
             </form>
         </section>
 
-        <section class="comments">
+        <section class="comment">
             <div class="comment-infos">
                 <img src="./img/default.png" alt="photo de profil">
                 <span class="comment-pseudo">User Number 1</span>
                 <span class="comment-date">Il y a <span class="date">15</span> jours</span>
             </div>
             <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
+        </section>
 
+        <section class="comment">
+            <div class="comment-infos">
+                <img src="./img/default.png" alt="photo de profil">
+                <span class="comment-pseudo">User Number 1</span>
+                <span class="comment-date">Il y a <span class="date">15</span> jours</span>
+            </div>
+            <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
+        </section>
 
+        <section class="comment">
+            <div class="comment-infos">
+                <img src="./img/default.png" alt="photo de profil">
+                <span class="comment-pseudo">User Number 1</span>
+                <span class="comment-date">Il y a <span class="date">15</span> jours</span>
+            </div>
+            <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
         </section>
         
 

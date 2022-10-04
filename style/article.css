@@ -9,7 +9,7 @@ article h1 {
 }
 
 article .author, 
-.comments .comment-infos {
+.comment .comment-infos {
     height: 10vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -18,7 +18,7 @@ article .author,
 }
 
 article .author img,
-.comments img {
+.comment img {
     max-width: 90%;
     max-height: 90%;
     aspect-ratio: 1/1;
@@ -31,12 +31,12 @@ article .author .fa-solid {
 }
 
 .author p:first-of-type,
-.comments span:first-of-type {
+.comment span:first-of-type {
     margin: auto 0 var(--spacing-1);
 }
 
 .author p:last-of-type,
-.comments span:last-of-type  {
+.comment span:last-of-type  {
     margin: var(--spacing-1) 0 auto;
 }
 
@@ -61,6 +61,12 @@ article>p {
 /*##############################################"*/
 /*                 FORM-COMMENT                  */
 /*##############################################"*/
+
+.comment-form, .comment {
+    max-width: 500px;
+    margin: auto;
+}
+
 
 .comment-form hr {
     margin: var(--spacing-1) 0;
@@ -150,6 +156,34 @@ button span::before {
 /*                    COMMENT                    */
 /*##############################################"*/
 
-.comments img {
+.comment img {
     border-radius: 50%;
+}
+
+.comment-infos {
+    max-width: 500px;
+}
+
+.comment {
+    margin-top: var(--spacing-4);
+}
+
+.comment-pseudo {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.comment-date {
+    color: grey;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .comment-form, .comment {
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }

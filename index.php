@@ -1,3 +1,6 @@
+<?php 
+    include '_data.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,127 +21,40 @@
     
     <main>
         <section>
-            <h1>Article à la <a href="article.php">Une</a></h1>
-            <p>Découvrez les dernières news tech !</p>
+            <h1>Article à la Une</h1>
+            
         </section>
 
+        <?php foreach($dataArticles as $article): ?>
+            <article>
+                <h1><?= $article['title']?></h1>
+                <i class="<?= $article['icon'];?>"></i>
+                <p class="description">
+                    <?= $article['description'] ?>
+                </p>
+                <div class='author'>
+                    <img src="./img/profile_pic_<?=$article['picture']?>.png" alt="Photo de profil de l'auteur">
+                    <p><?= $article['author'] ?></p>
+                    <p class="infos"><span><?= $article['date'] ?></span><i class="fa-solid fa-circle"></i><span><?= $article['time'] ?></span></p>
+                </div>
+                <a href="./article.php"></a>
+    
 
-        <article>
-            <h1>Comment bien réaliser sa veille Tech !</h1>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
-                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
-                Cet article est là pour vous aider !
-            </p>
-            <div class='author'>
-                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
-                <p>Florent Vasseur</p>
-                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
-            </div>
-  
-
-            <p class='social'>
-                <span><i class="fa-regular fa-bookmark"></i></span>
-                <span><i class="fa-regular fa-message"></i> 5 </span>
-                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
-                <span><i class="fa-solid fa-share-nodes"></i></span>
-            </p>
-        </article>
-
-
-               <article>
-            <h1>Comment bien réaliser sa veille Tech !</h1>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
-                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
-                Cet article est là pour vous aider !
-            </p>
-            <div class=author>
-                <img src="./img/profile_pic_jess.png" alt="Photo de profil de l'auteur">
-                <p>Jessica Pecheux Vasseur</p>
-                <p class="infos"><span>15 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>5 MIN READ</span></p>
-            </div>
-  
-
-            <p class='social'>
-                <span><i class="fa-regular fa-bookmark"></i></span>
-                <span><i class="fa-regular fa-message"></i> 5 </span>
-                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
-                <span><i class="fa-solid fa-share-nodes"></i></span>
-            </p>
-        </article>
-        <article>
-            <h1>Comment bien réaliser sa veille Tech !</h1>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
-                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
-                Cet article est là pour vous aider !
-            </p>
-            <div class=author>
-                <img src="./img/profile_pic_maxence.png" alt="Photo de profil de l'auteur">
-                <p>Maxence Hattabi Vasseur</p>
-                <p class="infos"><span>25 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>3 MIN READ</span></p>
-            </div>
-  
-
-            <p class='social'>
-                <span><i class="fa-regular fa-bookmark"></i></span>
-                <span><i class="fa-regular fa-message"></i> 5 </span>
-                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
-                <span><i class="fa-solid fa-share-nodes"></i></span>
-            </p>
-        </article>
-
-        <article>
-            <h1>Comment bien réaliser sa veille Tech !</h1>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
-                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
-                Cet article est là pour vous aider !
-            </p>
-            <div class=author>
-                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
-                <p>Florent Vasseur</p>
-                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
-            </div>
-  
-
-            <p class='social'>
-                <span><i class="fa-regular fa-bookmark"></i></span>
-                <span><i class="fa-regular fa-message"></i> 5 </span>
-                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
-                <span><i class="fa-solid fa-share-nodes"></i></span>
-            </p>
-        </article>
-
-        <article>
-            <h1>Comment bien réaliser sa veille Tech !</h1>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p class="description">La tech étant en constante évolution, il est nécessaire de mettre en permanence ces c
-                onnaissances à jour au risque d'être vite dépassé. Cette tâche bien qu'indispensable peut être vite chronophage.
-                Cet article est là pour vous aider !
-            </p>
-            <div class=author>
-                <img src="./img/profile_pic_flo.png" alt="Photo de profil de l'auteur">
-                <p>Florent Vasseur</p>
-                <p class="infos"><span>10 SEPT 2022</span><i class="fa-solid fa-circle"></i><span>2 MIN READ</span></p>
-            </div>
-  
-
-            <p class='social'>
-                <span><i class="fa-regular fa-bookmark"></i></span>
-                <span><i class="fa-regular fa-message"></i> 5 </span>
-                <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
-                <span><i class="fa-solid fa-share-nodes"></i></span>
-            </p>
-        </article>
-
+                <p class='social'>
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                    <span><i class="fa-regular fa-message"></i> <?= $article['social'][0] ?> </span>
+                    <span><i class="fa-regular fa-thumbs-up"></i> <?= $article['social'][1] ?> </span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                </p>
+            </article>
+        <?php endforeach; ?>
 
     </main>
 
     <?php 
         include '_footer.php';
     ?>
+    
 
 
     

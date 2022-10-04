@@ -38,16 +38,17 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center; /* space-between;*/
-    gap: var(--spacing-4);
-    /*background-color: #00BAF0;
-    background: linear-gradient(to left, #f46b45, #eea849);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-    color: #FFF;
-    padding: 1em;*/
 }
 
-.top-nav img {
+.logo {
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+}
+
+.logo img {
   height: 80%;
+  margin: auto;
 }
 
 .menu {
@@ -60,6 +61,7 @@ body {
 .menu > li {
   margin: 0 var(--spacing-2);
   overflow: hidden;
+  text-align: center;
 }
 
 header a {
@@ -67,6 +69,56 @@ header a {
   text-decoration: none;
   font-size: 2rem;
 }
+
+@media screen and (min-width:815px) {
+  .menu {
+    position: relative;
+  }
+
+  .menu li {
+    z-index: 1;
+  }
+
+  .menu .animation {
+    position: absolute;
+    height: 100%;
+    top:0;
+    z-index: 0;
+    background-color: blue;
+    border-radius: var(--spacing-1);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu .start-home {
+    width: 103px;
+    left:  8px;
+  }
+
+  li:nth-child(1):hover~.animation {
+    width: 103px;
+    left: 8px;
+  }
+
+  li:nth-child(2):hover~.animation {
+    width: 126px;
+    left: 127px;
+  }
+
+  li:nth-child(3):hover~.animation {
+    width: 150px;
+    left: 269px;
+  }
+
+  li:nth-child(4):hover~.animation {
+    width: 171.5px;
+    left: 437px;
+  }
+}
+
+
+/*##################################################*/
+/*                 MENU HAMBURGER                   */
+/*##################################################*/
 
 .menu-button-container {
   display: none;
@@ -190,8 +242,75 @@ footer {
   color: white;
 }
 
-footer p:last-of-type {
+footer>div {
   display: flex;
   gap: var(--spacing-2);
   font-size: 2rem;
+  height: 100%;
+}
+
+.section {
+  background-color: hsl(236,38%,8%);;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  border-radius: var(--spacing-1);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.9);
+  transition: width 0.5s ease-in-out,
+  background-color 0.5s ease-in-out;
+}
+
+.icon {
+  display: flex;
+  height: 50px;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width:800px) {
+
+    .section:hover {
+      width: 220px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .section::after {
+      content: attr(tooltip);
+      margin-left: var(--spacing-1);
+    } 
+
+    .facebook:hover {
+      background-color: #395693;
+    }
+
+    .instagram:hover {
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    }
+
+    .twitter:hover {
+      background-color: #1A8CD8;
+    }
+
+    .linkedin:hover {
+      background-color: #0A66C2;
+    }
+
+    .youtube:hover {
+      background-color: #FF0000;
+    }
+  
+}
+
+@media screen and (max-width:600px) {
+  footer {
+    flex-direction: column;
+    padding-top: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
+  }
 }

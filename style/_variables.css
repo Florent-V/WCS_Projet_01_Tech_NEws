@@ -11,3 +11,12 @@
     
     --box-shadow-1 : 0px 0px 10px 3px rgba(255,255,255,0.75);
 }
+
+@font-face {
+    font-family: 'ventography';
+    src: url('../fonts/ventography_personal_use_only-webfont.woff2') format('woff2'),
+         url('../fonts/ventography_personal_use_only-webfont.woff') format('woff'),
+         url('../fonts/Ventography_Personal_Use_Only.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
