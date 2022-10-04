@@ -94,22 +94,26 @@ header a {
     left:  8px;
   }
 
-  li:nth-child(1):hover~.animation {
+  li:nth-child(1):hover~.animation, 
+  li:nth-child(1).active~.animation {
     width: 103px;
     left: 8px;
   }
 
-  li:nth-child(2):hover~.animation {
+  li:nth-child(2):hover~.animation,
+  li:nth-child(2).active~.animation {
     width: 126px;
     left: 127px;
   }
 
-  li:nth-child(3):hover~.animation {
+  li:nth-child(3):hover~.animation,
+  li:nth-child(3).active~.animation {
     width: 150px;
     left: 269px;
   }
 
-  li:nth-child(4):hover~.animation {
+  li:nth-child(4):hover~.animation,
+  li:nth-child(4).active~.animation {
     width: 171.5px;
     left: 437px;
   }
