@@ -28,15 +28,15 @@ body {
 
 /* CONTACT US */
 
-.namesBox {
-    display:inline-flex;                    
+/*.namesBox {
+    display:inline-block;                    
     margin: 0 auto;
     margin-bottom: 15px;
     width: 380px;
     max-width: 100%;
-   
-}
-.bandeau {
+    box-sizing: border-box;
+}*/
+/*.bandeau {
     display: none;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body {
     color: #fff;
     padding: .5rem;
     z-index: 1;
-}
+}*/
 
 .boxFormulaire {
         /*display: grid;
@@ -58,69 +58,182 @@ body {
     max-width: 90%;
     max-height: 90%; 
     display:flex;*/
-    /*box-shadow: 0 0 2px 3px lightblue;*/ 
-    margin-top:60px;
+    /*box-shadow: 0 0 2px 3px lightblue;*/
+    display:flex;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    
+    flex-direction: column;  
+    margin-bottom: 10px;                                  
+    margin-top:50px;
+    margin: 0 auto;
+    max-width: 90%;
+    height: 100%;
+    box-sizing: border-box;
     background-color: rgb(198, 235, 230);
+    margin-bottom: 50px;
+    padding: 1rem;
 }
 
-p {
-    margin-top:70px;
+.boxFormulaire form {
+    border-radius: 10px;
+    border:1px solid black;
+    padding: 1rem;
+}
+
+.boxFormulaire h3 {
+    margin-top:-2rem;
+    text-align:center;
+    background-color:rgb(198, 235, 230);
+    max-width: 50%;
+}
+
+.pForm {
+    color:#171933;
+    margin-top:100px;
+    margin-bottom: 50px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 70%;
+    max-width: 80%;
     color: #FFEFCA;
+    font-size: large;
+}
+
+.formElements {
+    padding-bottom: .5rem;
 }
 
 fieldset {
     display:flex;
-    color: rgb(110, 96, 115); 
+    color: #171933;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow:10px 10px 10px rgb(209, 213, 222) inset;
-    height: 380px;
+    height: 415px;
     padding-bottom: 50px;
+    width: 100%;
+    max-width: 95%;
+    box-sizing: border-box;
 }
 
-fieldset legend {
-    text-align: center;
+form {
+    color: #171933;
+    margin: 0 auto;
+    max-width: 100%;
+    box-shadow: 0px 21px 17px -19px rgba(0,0,0,0.75);
 }
 
 .formElements {
     margin: 0 auto;
-    min-width: 60%;
+    
 }
 
-.formBox {
-    margin: 0 auto;
-    max-width: 90%;
-}
-
-textarea {
+#messageForm {
+    width: 400px;
     height: 15em;
-    width: 30em;
 }
 
-h1 {
+.titleFormulaire {
     color:#FFEFCA;
-    margin-top: 40px;
+    margin-top: 70px;
     text-align: center;
+    margin-bottom: 100px;
+   
 }
 
 #email {
-    width:300px;
+width: 300px;
 }
 
-@media screen and (max-width: 665px) {
-fieldset {
-    
+.namesBox {
+    display:flex;                 
     margin-bottom: 15px;
-    min-width: 180px;
-    max-width: 100%;
-    };
+    width: 380px;
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 665px) {
+    
+    #messageForm {
+        width: 80%;
+        height: 15em;
+    }
+    .namesBox {
+        display:block;                   
+        width: 380px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    #email {
+        width: 80%;
+        }
+    .boxFormulaire {
+        height: 460px; 
+    }
+}
+
+.button {
+    padding: var(--spacing-1) var(--spacing-3);
+    position: relative;
+    background: hsl(236,38%,8%);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+input[type=submit]::before, 
+input[type=submit]::after {
+    content: "";
+    width:0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #54e6e7;
+}
+
+span::before, 
+span::after {
+    content: "";
+    width:2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #54e6e7;
+}
+
+input[type=submit]:hover::before, 
+input[type=submit]:hover::after {
+    width: 100%;
+}
+
+input[type=submit]:hover span::before, 
+input[type=submit]:hover span::after {
+    height: 100%;
+}
+
+input[type=submit]::after {
+    right:0;
+    bottom:0;
+    transition-duration: 0.4s;
+}
+
+input[type=submit] span::after {
+    right:0;
+    bottom:0;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]::before {
+    left:0;
+    top:0;
+    transition-duration: 0.4s;
+}
+
+input[type=submit] span::before {
+    left:0;
+    top:0;
+    transition-duration: 0.4s;
 }
