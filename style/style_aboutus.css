@@ -7,37 +7,54 @@
 main {
     min-height: 75vh;
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.5em;
+    line-height: var(--spacing-4);
 }
-h1{
-    color: white;
-    font-size: 3rem;
+
+h1 {
+    color: var(--font-color-1);
+    font-size: var(--spacing-3);
     text-align: center;
     margin-top: 4%;
     margin-bottom: 4%;
-    text-decoration: underline white;
-
+    text-decoration: underline var(--font-color-1);
 }
+
 section {
-    color : white;
+    color : var(--font-color-1);
+    padding-top: 10%;
 }
 
-p{
+section > p {
     max-width: 60ch;
     font-size: 1.3rem;
-    line-height: 1.5em;
+    line-height: var(--spacing-4);
 }
 
-img {
-    border-radius: 50%;
-    opacity: 1;
-    
-    
 
+/*STYLE RESEAUX SOCIAUX*/
+
+.unsurdeux {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-4);
+    font-size: var(--spacing-4);
 }
-img:hover{
-    opacity: 0.2;
-    
+.deuxsurdeux {
+    display: flex;
+    justify-content: start;
+    gap: var(--spacing-4);
+    font-size: var(--spacing-4);
+}
+div > i:hover {
+    background: linear-gradient(rgb(4, 2, 75), rgb(7, 137, 237)) border-box,
+    linear-gradient(45deg, rgb(11, 4, 57), rgb(8, 172, 201)) border-box;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    box-shadow: #1D9AF2;
+    -webkit-box-shadow: 0px 0px 300px 19px rgba(35,205,235,1);
+    -moz-box-shadow: 0px 0px 300px 19px rgba(35,205,235,1);
+    box-shadow: 0px 0px 300px 19px rgba(35,205,235,1);;
 }
 
 
@@ -46,49 +63,40 @@ img:hover{
 .florentv {
     display: grid;
     grid-template-areas: 
-        "img p"
-        "h  p" ;
-
+    "img p"
+    "h  p" ;
     margin-top: var(--spacing-4);
     gap: var(--spacing-3) ;
 }
 
 .florentv > h2 {
     grid-area: h;
-    margin-left: 60% ;
+    margin-left: 55% ;
+    padding-bottom: 20%;
 }
+
 .florentv > p {
     grid-area: p;
-    margin: auto;
+    margin: var(--spacing-5);
     padding: var(--spacing-3);
     text-align: start;
 }
+
 .florentv > img {
     grid-area: img;
-    margin: auto ;
+    margin: var(--spacing-5);
     margin-left: 50%;
     max-width: 45%;
-    box-shadow: var(--box-shadow-1);
-
+    margin-top: 5%;
+    border-radius:50% ;
+    background: linear-gradient(to right top, #05c8f9, #0db8e2, 
+                                #14a8cc, #1998b6, #1d88a1, 
+                                #107895, #056989, #005a7c, 
+                                #004772, #003365, #001f55, #0b0742) border-box;
+    border: 7px solid transparent;
+    box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2 ;
 }
 
-.unsurdeux{
-
-    display: flex;
-    justify-content: flex-end;
-    gap: 2em;
-    font-size: 2em;
-
-}
-
-.deuxsurdeux{
-    display: flex;
-    justify-content: start;
-    gap: 2em;
-    font-size: 2em;
-
-
-}
 
 
 /* TEXTE ET IMAGE JESSICA */
@@ -104,22 +112,30 @@ img:hover{
 }
 .jessicap > p {
     grid-area: p;
-    margin: auto;
+    margin: var(--spacing-5);
     padding: var(--spacing-3);
 }
 .jessicap > h2 {
     grid-area: h;
-    margin-right: 60%;
+    margin-right: 55%;
+    padding-bottom: 20%
 }
-
 .jessicap > img {
     grid-area: img;
     max-width: 45%;
-    margin: auto;
+    margin: var(--spacing-5);
     margin-right: 50%;
-    box-shadow: var(--box-shadow-2);
-    
+    margin-top: 5%;
+    border-radius:50% ;
+    background: linear-gradient(to right top, #05c8f9, #0db8e2, 
+                                #14a8cc, #1998b6, #1d88a1, 
+                                #107895, #056989, #005a7c, 
+                                #004772, #003365, #001f55, #0b0742) border-box;
+    border: 7px solid transparent;
+    box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2 ;
 }
+
+
 /* TEXTE ET IMAGE ALEXANDRE */
 
 .alexandred {
@@ -131,25 +147,32 @@ img:hover{
     margin-top: var(--spacing-4);
     gap: var(--spacing-3) ;
 }
-
 .alexandred > h2 {
     grid-area: h;
-    margin-left: 60% ;
+    margin-left: 55% ;
+    padding-right: 20px;
 }
 .alexandred > p {
     grid-area: p;
-    margin: auto;
+    margin: var(--spacing-5);
     padding: var(--spacing-3);
     text-align: start;
 }
 .alexandred > img {
     grid-area: img;
-    margin: auto ;
+    margin: var(--spacing-5);
     margin-left: 50%;
     max-width: 45%;
-    box-shadow: var(--box-shadow-1);
-
+    margin-top: 5%;
+    border-radius:50% ;
+    background: linear-gradient(to right top, #05c8f9, #0db8e2, 
+    #14a8cc, #1998b6, #1d88a1, 
+    #107895, #056989, #005a7c, 
+    #004772, #003365, #001f55, #0b0742) border-box;
+border: 7px solid transparent;
+box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2 ;
 }
+
 
 /* TEXTE ET IMAGE MAXENCE */
 
@@ -160,104 +183,90 @@ img:hover{
         "p h" ;
     text-align: end;
     margin-top: var(--spacing-4);
-    gap: var(--spacing-3) ;
-    
+    gap: var(--spacing-3) ;   
 }
 .maxenceh > p {
     grid-area: p;
-    margin: auto;
+    margin: var(--spacing-5);
     padding: var(--spacing-3);
     
 }
 .maxenceh > h2 {
     grid-area: h;
-    margin-right: 60%;
+    margin-right: 55%;
 }
-
 .maxenceh > img {
     grid-area: img;
     max-width: 45%;
-    margin: auto;
+    margin: var(--spacing-5);
     margin-right: 50%;
-    box-shadow: var(--box-shadow-2);
-    
-}
-/*##################################################*/
-/*                       FOOTER                     */
-/* #################################################*/
-
-footer {
-    height: 10vh;
-    border-top: 1px solid white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+    margin-top: 5%;
+    border-radius:50% ;
+    background: linear-gradient(to right top, #05c8f9, #0db8e2, 
+                                #14a8cc, #1998b6, #1d88a1, 
+                                #107895, #056989, #005a7c, 
+                                #004772, #003365, #001f55, #0b0742) border-box;
+    border: 7px solid transparent;
+    box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2 ;
 }
 
-footer p:last-of-type {
-    display: flex;
-    gap: var(--spacing-2);
-    font-size: 2rem;
-}
 
 /* MEDIA QUERIES */
 
-
-@media screen and (max-width: 900px){
-    *{
+@media screen and (max-width: 900px) {
+    * {
         max-width: none;
     }
 }
-/* MEDIA QUERIES */
+
 @media screen and (max-width: 900px) {
     h1{
         display: flex;
-        
-        font-size: 2em;
-        margin-left: 30%;
+        text-align: center;
+        font-size: var(--spacing-4);
+        justify-content: center;
     }
 }
+
+
+/* MEDIA QUERIES FLORENT */
 
 @media screen and (max-width: 900px) {
     .florentv{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto;
-    
-        
+        margin: var(--spacing-5);
     }
 }
 @media screen and (max-width: 900px) {
     .florentv > h2 {
-        margin: auto;
-    
-        
-    }
+        margin: var(--spacing-5);
+        padding: 0;
+     }
 }
 @media screen and (max-width: 900px) {
     .florentv > p {
         margin-left: 0;
         text-align: justify;
+        max-width: 100%;
         padding: 0;
     }
 }
-
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
     .florentv > img {
-        margin-left: auto;
+        margin-left: var(--spacing-5);
     }
 }
 
 
 /* MEDIA QUERIES JESSICA */
+
 @media screen and (max-width: 900px) {
     .jessicap{
         display: flex;
         flex-direction: column;
-    
-        
+        margin-top: 20%;
     }
 }
 
@@ -265,46 +274,42 @@ footer p:last-of-type {
     .jessicap > p {
         margin-left: 0;
         text-align: justify;
+        max-width: 100%;
         padding: 0;
     }
 }
 @media screen and (max-width: 900px) {
     .jessicap > h2 {
-        margin: auto;
-    }
-    
+        margin: var(--spacing-5);
+        padding: 0;
+    }   
 }
-
 @media screen and (max-width: 900px) {
     .jessicap > img {
-        margin-right: auto;
+        margin-right: var(--spacing-5);
     }
-    
 }
 
 
 /* MEDIA QUERIES ALEXANDRE */
+
 @media screen and (max-width: 900px) {
     .alexandred{
         display: flex;
         flex-direction: column;
-    
-        
+        margin-top: 20%;
     }
 }
 @media screen and (max-width: 900px) {
     .alexandred > h2 {
-        margin: auto;
+        margin: var(--spacing-5);
     }
-    
 }
 @media screen and (max-width: 900px){
     .alexandred > img {
-        margin-left: auto;
+        margin-left: var(--spacing-5);
     }
 }
-
-
 @media screen and (max-width: 900px) {
     .alexandred > p {
         margin-left: 0;
@@ -315,19 +320,18 @@ footer p:last-of-type {
 }
 
 
-
 /* MEDIA QUERIES MAXENCE */
+
 @media screen and (max-width: 900px) {
     .maxenceh{
         display: flex;
         flex-direction: column;
-    
-        
+        margin-top: 20%;
     }
 }
 @media screen and (max-width: 900px) {
     .maxenceh > h2 {
-        margin: auto;
+        margin: var(--spacing-5);
     }   
 }
 @media screen and (max-width: 900px) {
@@ -340,8 +344,53 @@ footer p:last-of-type {
 }
 @media screen and (max-width: 900px) {
     .maxenceh > img {
-        margin-right: auto;
+        margin-right: var(--spacing-5);
     }
-    
 }
 
+/* MEDIA SCREEN RESEAUX */
+@media screen and (max-width: 900px){
+    .deuxsurdeux, .unsurdeux  {
+        justify-content: center;
+        margin-top: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+                                                          
+                                ██████              ██████                              
+                              ██░░░░░░██████████████░░░░░░██                            
+                              ██░░░░░░░░░░░░░░░░░░░░░░░░░░██                            
+                                ████░░░░░░░░░░░░░░░░░░████                              
+                                ██░░████░░░░░░░░░░████░░██                              
+                              ██░░░░████░░░░░░░░░░████░░░░██                            
+                              ██░░░░░░░░██████████░░░░░░░░██                            
+                              ██░░░░░░██░░░░░░░░░░██░░░░░░██                            
+                              ██░░░░░░██░░██░░██░░██░░░░░░██                            
+                              ██░░░░░░██░░░░░░░░░░██░░░░░░██                            
+                                ██░░░░░░██████████░░░░░░██                              
+                                ██░░░░░░░░░░░░░░░░░░░░░░██                              
+                                  ██░░██░░░░░░░░░░██░░██                                
+                                  ██░░░░██████████░░░░██                                
+                                  ██░░░░██      ██░░░░██                                
+                                  ████████      ████████                                
+*/                                                                                        
+                                                                                        
+                                                             
