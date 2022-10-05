@@ -41,6 +41,9 @@ include 'content_aboutus.php';
         <?php echo $sectionMaxence ?>
         <?php echo $socialMediaMaxence ?>
 
+        
+
+
     </main>
 
     <?php
