@@ -14,5 +14,3 @@ Maxence : Page About Us
 Alexandre : Page contact
 
 Florent : Page Accueil
-
-A définir : page article/Comment bien réaliser sa veille tech
