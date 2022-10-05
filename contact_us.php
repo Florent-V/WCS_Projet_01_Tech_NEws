@@ -16,45 +16,42 @@
 include '_header.php';
 ?>
 <main>
-  <section class="bandeau"></section>
-  <h1>Formulaire de contact</h1>
-    <p>Pour toutes questions, demandes ou suggestions veuillez utiliser ce formulaire pour nous contacter. <br />
+    <h1 class="titleFormulaire">Formulaire de contact</h1>
+      <div class="pForm"><p>Pour toutes questions, demandes ou suggestions veuillez utiliser ce formulaire pour nous contacter. <br /><br />
       Réponse rapide assurée !
-    </p>
-
+    </p></div>
+  
   <section class="boxFormulaire">
-
-    
-    <fieldset>
-      <legend>Contactez-nous</legend>
-
-      <form class="formBox" method= "post" action="traitement.php">                        
+  <form method= "post" action="traitement.php"> 
+        <h3>Contactez-nous</h3>                    
         <div class="namesBox">
 
-          <div class="formElements"><label for="name">Prénom:</label><br />
-            <input type="text" id="fname"name="firstane" placeholder="Votre prénom" required>
+          <div class="formElements">
+            <label for="name">Prénom:</label><br />
+            <input type="text" id="fname"name="firstane" placeholder="John" required>
           </div>
 
           <div class="formElements">
             <label for="name">Nom:</label><br />
-            <input type="lastName" placeholder="Votre nom" />
+            <input type="lastName" placeholder="Doe" />
           </div>
+        </div>
 
         </div>
 
           <div class="formElements">
-            <label for="email">Email</label><br />
+            <label for="email">Email:</label><br />
             <input type="text" id="email"name=email placeholder="@" required>
           </div>
 
           <div class="formElements">
-            <label for="Text">Your message</label><br />
-            <textarea  placeholder="Your message" ></textarea></textarea><br />
+            <label for="textMessage">Votre message</label><br />
+            <textarea id="messageForm" name="Message" placeholder="Saisir votre message" ></textarea><br />
             <input type="submit" class="button">
-          </div> 
-
+        </div> 
+        
       </form>
-    </fieldset>
+
   </section>
 </main>
 
@@ -63,3 +60,6 @@ include '_header.php';
   ?>
 </body>
 </html>
+
+<!--<button><span>Envoyer</span></button>!-->
+
