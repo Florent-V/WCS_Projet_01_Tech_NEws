@@ -1,6 +1,7 @@
 <?php 
-    include '_data.php';
+    include './data/_data.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +26,7 @@
             
         </section>
 
-        <?php foreach($dataArticles as $article): ?>
+        <?php foreach($dataArticles as $key => $article): ?>
             <article>
                 <h1><?= $article['title']?></h1>
                 <i class="<?= $article['icon'];?>"></i>
@@ -37,7 +38,7 @@
                     <p><?= $article['author'] ?></p>
                     <p class="infos"><span><?= $article['date'] ?></span><i class="fa-solid fa-circle"></i><span><?= $article['time'] ?></span></p>
                 </div>
-                <a href="./article.php"></a>
+                <a href="./article.php?id=<?=++$key?>"></a>
     
 
                 <p class='social'>

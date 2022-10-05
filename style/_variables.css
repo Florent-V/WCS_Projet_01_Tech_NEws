@@ -1,6 +1,7 @@
 :root {
     --primary-color: #171933;
     --secondary-color: #FFEFCA;
+    --tertiary-color: hsl(236,38%,8%);
 
     --spacing-1 : 0.5rem;
     --spacing-2 : calc(var(--spacing-1)*2);
@@ -9,6 +10,11 @@
     --spacing-5 : auto;
 
     --font-color-1: #fff;
+
+    --font-size: 1rem;
+    --sub-title: calc(var(--font-size)*2);
+    --main-title: calc(var(--font-size)*3);
+
     
     --box-shadow-1 : 0px 0px 10px 3px rgba(255,255,255,0.75);
 }

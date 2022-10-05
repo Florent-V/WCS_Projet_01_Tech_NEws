@@ -1,4 +1,4 @@
-<script src="./script.js"></script>
+<script src="./script/script.js"></script>
 
 <footer>
         <p>Copyright &copy <?php echo date('Y'); ?> <i class="fa-solid fa-bolt"></i> PHPower <i class="fa-solid fa-bolt"></i></p>
