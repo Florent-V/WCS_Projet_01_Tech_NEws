@@ -31,7 +31,7 @@ include $file;
     
     <main>
         <article>
-            <h1><?=$title?></h1>
+            <h1 id="top"><?=$title?></h1>
             <hr>
             <div class='author'>
                 <img src="./img/profile_pic_<?=$picture?>.png" alt="Photo de profil de l'auteur">
@@ -39,7 +39,7 @@ include $file;
                 <p id="info" class="infos"><span><?=$date?></span><i class="fa-solid fa-circle"></i><span><?=$time?></span></p>
             </div>
             <hr>
-            <!-- <img src="https://picsum.photos/200/300" alt=""> -->
+        
             <?=$body?>
         </article>
 
@@ -69,7 +69,7 @@ include $file;
                 <span class="comment-pseudo">User Number 1</span>
                 <span class="comment-date">Il y a <span class="date">15</span> jours</span>
             </div>
-            <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
+            <p class="comment-content">Euh excuse-moi, mais c'est quand même frappant niveau logique : j'imagine bien à quel point tu n'as aucune idée de comment se déroule une éléction vue par les joueurs de foot (et on n'y peut rien…) , et les experts sont unanimes pour dire que Trump & sa clique n'ont aucune idée des dangers de ce type de dérive . Il faut savoir rester humble, tu n'as aucune info concrète sur les provinciaux qui sont les seuls à soutenir les opposants à la PMA ! Et sinon, vous, ça va ? !</p>
         </section>
 
         <section class="comment">
@@ -89,9 +89,14 @@ include $file;
             </div>
             <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
         </section>
+
+
         
 
     </main>
+
+    
+
 
     <?php 
         include '_footer.php';

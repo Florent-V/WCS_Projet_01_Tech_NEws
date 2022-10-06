@@ -18,17 +18,17 @@ ob_start();
 
 <code>
     <pre>
-        const form = document.forms[0];
-        form.addEventListener('submit', function(event) {
-          // code to submit the form goes here
-          event.preventDefault();
-          console.log('form submitted!');
-        });
-        
-        document.querySelector('.btn').addEventListener('click', function() {
-          form.submit();
-        })
-    </pre>
+const form = document.forms[0];
+form.addEventListener('submit', function(event) {
+  // code to submit the form goes here
+  event.preventDefault();
+  console.log('form submitted!');
+});
+
+document.querySelector('.btn').addEventListener('click', function() {
+  form.submit();
+})
+</pre>
 </code>
 
 <p>.submit()ignorera également toute validation de formulaire HTML. Étant donné le balisage suivant, le formulaire sera soumis lorsque l'entrée est vide même si l'entrée a un requiredattribut</p>
@@ -37,16 +37,17 @@ ob_start();
 
 <code>
     <pre>
-        form.addEventListener('submit', function(event) {
-          event.preventDefault();
-          console.log('form submitted!');
-        });
-        
-        document.querySelector('.btn').addEventListener('click', function() {
-          form.requestSubmit();
-        })
-    </pre>
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  console.log('form submitted!');
+});
+
+document.querySelector('.btn').addEventListener('click', function() {
+  form.requestSubmit();
+})
+</pre>
 </code>
+
 
 
 

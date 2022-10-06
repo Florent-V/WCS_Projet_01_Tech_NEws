@@ -1,3 +1,6 @@
+
+/* Changement icône bookmark on click */
+
 const favorites = [...document.getElementsByClassName('fa-bookmark')];
 
 favorites.forEach( favorite => {
@@ -8,6 +11,7 @@ favorites.forEach( favorite => {
     })
 });
 
+/* Marquage de l'onglet de la page courante */
 
 const pages = ['index', 'publication', 'about_us', 'contact_us'];
 
@@ -22,3 +26,18 @@ const updateActive = pages => {
 }
 
 updateActive(pages);
+
+/* Bouton Top */
+
+console.log(document.body.scrollTop)
+
+
+const scrollFunction = () => {
+    if (document.documentElement.scrollTop > 200 &&( (document.documentElement.scrollTop + document.documentElement.clientHeight) <  (document.documentElement.scrollHeight-100))) {
+        document.getElementById('toTop').style.display = "block";
+    } else {
+        document.getElementById('toTop').style.display = "none";
+    }
+}
+
+window.onscroll = function() {scrollFunction()};

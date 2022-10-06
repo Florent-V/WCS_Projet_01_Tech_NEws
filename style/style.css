@@ -27,6 +27,10 @@ body {
   
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*##################################################*/
 /*                  HEADER                          */
 /*##################################################*/
@@ -259,12 +263,37 @@ main {
   padding: var(--spacing-2) 0;
 }
 
+/*Scroll to top */
+#toTop {
+  position: fixed;
+  display: none;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  border: none;
+  color: #fff;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: var(--spacing-2);
+  transition: transform 0.5s ease-in-out;
+}
+
+#toTop a {
+  color: #fff;
+}
+
+#toTop:hover {
+  transform: scale(1.5);
+}
+
+
 /*##################################################*/
 /*                       FOOTER                     */
 /* #################################################*/
 
 footer {
-  height: 10vh;
+  min-height: 10vh;
   border-top: 1px solid white;
   display: flex;
   justify-content: space-between;
@@ -342,5 +371,10 @@ footer>div {
     flex-direction: column;
     padding-top: var(--spacing-1);
     margin-bottom: var(--spacing-1);
+    padding-bottom: var(--spacing-1);
+  }
+
+  footer>p, footer>div {
+    margin: var(--spacing-1) 0;
   }
 }

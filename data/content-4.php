@@ -65,7 +65,7 @@ Release branches? [release/]
 Hotfix branches? [hotfix/]
 Support branches? [support/]
 Version tag prefix? []
-    </pre>
+</pre>
 </code>
 
 <p>Pour vérifier que l’initialisation s’est bien déroulée, lancez la commande suivante :</p>
@@ -73,10 +73,9 @@ Version tag prefix? []
 
 <code>
     <pre>
-        $ git branch
-        * develop
-         master
-    </pre>
+$ git branch
+* develop
+master</pre>
 </code>
 
 
@@ -98,9 +97,9 @@ Version tag prefix? []
 
 <code>
     <pre>
-        git checkout develop
-        git checkout -b feature/authentification
-    </pre>
+git checkout develop
+git checkout -b feature/authentification
+</pre>
 </code>
 
 <p>Ensuite, vous n’avez plus qu’à coder votre fonctionnalité. Lorsque vous avez fini, vous devez lancer la commande suivante :</p>
@@ -113,10 +112,10 @@ Version tag prefix? []
 
 <code>
     <pre>
-        git checkout develop
-        git merge feature/authentification
-        git branch -D feature/authentification
-    </pre>
+git checkout develop
+git merge feature/authentification
+git branch -D feature/authentification
+</pre>
 </code>
 
 <p><strong>Créer une nouvelle version (release) avec Gitflow</strong></p>
@@ -142,9 +141,9 @@ Version tag prefix? []
 
 <code>
     <pre>
-        git checkout master
-        git merge release/1.0.0
-    </pre>
+git checkout master
+git merge release/1.0.0
+</pre>
 </code>
 
 <p>Un tag local est aussi créé pour marquer la version dans Git. Pour envoyer le tag sur votre serveur de version, lancez la commande suivante :</p>
@@ -176,9 +175,9 @@ Version tag prefix? []
 
 <code>
     <pre>
-        git checkout master
-        git checkout -b hotfix/change_api_url
-    </pre>
+git checkout master
+git checkout -b hotfix/change_api_url
+</pre>
 </code>
 
 <p>Puis lorsque vous avez terminé votre hotfix et que vous êtes prêt à le livrer, il vous suffit de lancer cette commande :</p>
@@ -192,12 +191,12 @@ Version tag prefix? []
 
 <code>
     <pre>
-        git checkout master
-        git merge hotfix/change_api_url
-        git checkout develop
-        git merge hotfix/change_api_url
-        git branch -D hotfix/change_api_url
-    </pre>
+git checkout master
+git merge hotfix/change_api_url
+git checkout develop
+git merge hotfix/change_api_url
+git branch -D hotfix/change_api_url
+</pre>
 </code>
 
 
