@@ -3,6 +3,23 @@
 
     extract($dataArticles[$id-1]);
 
+    $comments = [
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '5 jours',
+        'comment' => "Mais laissez-moi rire,  on dirait que tu t'exprimes sans savoir de quoi tu parles réellement… à aucun moment tes idées ne mentionnent la télé-réalité (je serais étonné de constater le résultat dans 15 ans) , et qui n'est pas d'accord pour dire que les cadres sont quand même plus heureux au soleil . Je ne comprends pas pourquoi tu t'énerves, il faut apprendre à supporter les sacro-saints patrons d'Amazon qui créent du boulot sans corroborrer toute cette bien-pensance . Après tout, qui peut prétendre avoir lu tout internet ? "],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '6 jours',
+        'comment' => "Quoi qu'on dise concernant la sinistrose de la société, il serait intéressant de favoriser les relations des améliorations imaginables, parce que nous le valons bien."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '6 jours',
+        'comment' => "Malgré l'ambiance intrinsèque, il ne faut pas s'interdire d’arrêter de stigmatiser parmi les améliorations possibles, à long terme."],
+    ];
+
     //équivalent de :
     // foreach ($test as $key => $valeur) {
     //     $$key = $valeur;

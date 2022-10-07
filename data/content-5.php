@@ -1,6 +1,39 @@
 <?php
     include '_data.php';
 
+    $comments = [
+      ['picture' => 'default',
+      'pseudo' => $pseudos[array_rand($pseudos)],
+      'date' => '5 jours',
+      'comment' => "	En fait, ce soir moi j'ai vu une matinée coquine dans un magasin de bonbons gélifiés avec beaucoup de couleurs, du rose, 
+      du fuchsia, des tonnes de mauve, aussi."],
+  
+      ['picture' => 'default',
+      'pseudo' => $pseudos[array_rand($pseudos)],
+      'date' => '6 jours',
+      'comment' => "Quand j'étais petit, j'avais un vélo et le jour où j'ai posé une rustine pour la première fois, j'ai eu l'impression 
+      que la chambre à air était pleine du souffle divin et c'est exactement ce qui s'est passé en fait, juste là."],
+  
+      ['picture' => 'default',
+      'pseudo' => $pseudos[array_rand($pseudos)],
+      'date' => '6 jours',
+      'comment' => "Pendant 3 minutes j'avais l'impression que Dieu, ce grand horloger que Nietszche méprisait tant, avait décidé de faire 
+      une happy hour, et c'est complètement ce que tu nous as offert, ouais, une sorte d'extase mystique post-moderne et fiévreuse."],
+  
+      ['picture' => 'default',
+      'pseudo' => $pseudos[array_rand($pseudos)],
+      'date' => '8 jours',
+      'comment' => "Article fort amusant et  ironique. Bien que j'aurais apprécié unne connclusion exempte de pirouette"],
+  
+      ['picture' => 'default',
+      'pseudo' => $pseudos[array_rand($pseudos)],
+      'date' => '10 jours',
+      'comment' => "Euh excuse-moi, mais tu as manifestement des appuis de réseau puisque avec le fric que Macron paie pour les joueurs 
+      de Farmville (tu vois de quoi je parle, quand même ?) , les politiques pensent que les anarchistes sont peut-être les seuls 
+      réellement concernés . Il faut quand même imaginer le pire scénario, j'ai du mal à voir le rapport avec les chiffres qui 
+      te font dénoncer les inégalités ! Voilà ce qui arrive lorque l'on mord la main qui vous nourrit. "],
+  ];
+
     extract($dataArticles[$id-1]);
 
     //équivalent de :
@@ -18,17 +51,17 @@ ob_start();
 
 <code>
     <pre>
-        const form = document.forms[0];
-        form.addEventListener('submit', function(event) {
-          // code to submit the form goes here
-          event.preventDefault();
-          console.log('form submitted!');
-        });
-        
-        document.querySelector('.btn').addEventListener('click', function() {
-          form.submit();
-        })
-    </pre>
+const form = document.forms[0];
+form.addEventListener('submit', function(event) {
+  // code to submit the form goes here
+  event.preventDefault();
+  console.log('form submitted!');
+});
+
+document.querySelector('.btn').addEventListener('click', function() {
+  form.submit();
+})
+</pre>
 </code>
 
 <p>.submit()ignorera également toute validation de formulaire HTML. Étant donné le balisage suivant, le formulaire sera soumis lorsque l'entrée est vide même si l'entrée a un requiredattribut</p>
@@ -37,16 +70,17 @@ ob_start();
 
 <code>
     <pre>
-        form.addEventListener('submit', function(event) {
-          event.preventDefault();
-          console.log('form submitted!');
-        });
-        
-        document.querySelector('.btn').addEventListener('click', function() {
-          form.requestSubmit();
-        })
-    </pre>
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  console.log('form submitted!');
+});
+
+document.querySelector('.btn').addEventListener('click', function() {
+  form.requestSubmit();
+})
+</pre>
 </code>
+
 
 
 

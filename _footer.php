@@ -1,6 +1,7 @@
 <script src="./script/script.js"></script>
 
 <footer>
+<button id="toTop" title="Retour haut de page"><a href="#top"><i class="fa-solid fa-arrows-up-to-line"></i></a></button>
         <p>Copyright &copy <?php echo date('Y'); ?> <i class="fa-solid fa-bolt"></i> PHPower <i class="fa-solid fa-bolt"></i></p>
         <div>
            <div class="section instagram" tooltip="Instagram">

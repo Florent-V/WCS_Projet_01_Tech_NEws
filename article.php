@@ -31,7 +31,7 @@ include $file;
     
     <main>
         <article>
-            <h1><?=$title?></h1>
+            <h1 id="top"><?=$title?></h1>
             <hr>
             <div class='author'>
                 <img src="./img/profile_pic_<?=$picture?>.png" alt="Photo de profil de l'auteur">
@@ -39,59 +39,46 @@ include $file;
                 <p id="info" class="infos"><span><?=$date?></span><i class="fa-solid fa-circle"></i><span><?=$time?></span></p>
             </div>
             <hr>
-            <!-- <img src="https://picsum.photos/200/300" alt=""> -->
+        
             <?=$body?>
         </article>
 
-        <section class="comment-form">
-            <h2>3 commentaires</h2>
+        <section class="comment-form" id="add-comment">
+            <h2><?=count($comments)?> Commentaires</h2>
             <hr>
             <form action="">
                 <div>
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" id="name" required>
+                    <label for="pseudo">Nom<span>Le nom ne doit pas être vide</span></label>
+                    <input type="text" name="pseudo" id="pseudo" >
                 </div>
                 <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" required rows="10"></textarea>
+                    <label for="commentary">Message<span>Le message ne doit pas être vide</span></label>
+                    <textarea name="commentary" id="commentary"  rows="10"></textarea>
                 </div>
 
                 <button>
                     <span>Envoyer</span>
                 </button>
-
             </form>
         </section>
 
-        <section class="comment">
-            <div class="comment-infos">
-                <img src="./img/default.png" alt="photo de profil">
-                <span class="comment-pseudo">User Number 1</span>
-                <span class="comment-date">Il y a <span class="date">15</span> jours</span>
-            </div>
-            <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
-        </section>
 
-        <section class="comment">
-            <div class="comment-infos">
-                <img src="./img/default.png" alt="photo de profil">
-                <span class="comment-pseudo">User Number 1</span>
-                <span class="comment-date">Il y a <span class="date">15</span> jours</span>
-            </div>
-            <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
-        </section>
 
-        <section class="comment">
-            <div class="comment-infos">
-                <img src="./img/default.png" alt="photo de profil">
-                <span class="comment-pseudo">User Number 1</span>
-                <span class="comment-date">Il y a <span class="date">15</span> jours</span>
-            </div>
-            <p class="comment-content">Trop cool l'article ! Merci pour ton contenu toujours bien expliqué !</p>
-        </section>
-        
+        <?php foreach($comments as $comment): ?>
+            <section class="comment">
+                <div class="comment-infos">
+                    <img src="./img/<?=$comment['picture']?>.png" alt="photo de profil">
+                    <span class="comment-pseudo"><?=$comment['pseudo']?></span>
+                    <span class="comment-date">Il y a <span class="date"><?=$comment['date']?></span></span>
+                </div>
+                <p class="comment-content"><?=$comment['comment']?></p>
+            </section>
+        <?php endforeach; ?>        
 
     </main>
+
+    
+
 
     <?php 
         include '_footer.php';

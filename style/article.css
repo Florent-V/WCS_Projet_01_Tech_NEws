@@ -67,11 +67,17 @@ article>ul {
 }
 
 article pre {
-    background-color: gray;
-    width: min-content;
+    background-color: #1B1B1B;
+    max-width: 100%;
     border-radius: var(--spacing-1);
     padding: var(--spacing-2);
     margin: var(--spacing-2) auto;
+    overflow: auto;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
 }
 
 /*##############################################"*/
@@ -112,8 +118,8 @@ article pre {
     font-size: 1rem;
 }
 
-button::before, 
-button::after {
+.comment-form button::before, 
+.comment-form button::after {
     content: "";
     width:0;
     height: 2px;
@@ -122,8 +128,8 @@ button::after {
     background: #54e6e7;
 }
 
-span::before, 
-span::after {
+.comment-form span::before, 
+.comment-form span::after {
     content: "";
     width:2px;
     height: 0;
@@ -132,35 +138,35 @@ span::after {
     background: #54e6e7;
 }
 
-button:hover::before, 
-button:hover::after {
+.comment-form button:hover::before, 
+.comment-form button:hover::after {
     width: 100%;
 }
 
-button:hover span::before, 
-button:hover span::after {
+.comment-form button:hover span::before, 
+.comment-form button:hover span::after {
     height: 100%;
 }
 
-button::after {
+.comment-form button::after {
     right:0;
     bottom:0;
     transition-duration: 0.4s;
 }
 
-button span::after {
+.comment-form button span::after {
     right:0;
     bottom:0;
     transition-duration: 0.4s;
 }
 
-button::before {
+.comment-form button::before {
     left:0;
     top:0;
     transition-duration: 0.4s;
 }
 
-button span::before {
+.comment-form button span::before {
     left:0;
     top:0;
     transition-duration: 0.4s;
@@ -190,6 +196,12 @@ button span::before {
 
 .comment-date {
     color: grey;
+}
+
+label span {
+    color: red;
+    margin-left: var(--spacing-2);
+    display: none;
 }
 
 

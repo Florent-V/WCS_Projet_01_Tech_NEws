@@ -3,6 +3,38 @@
 
     extract($dataArticles[$id-1]);
 
+    $comments = [
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '5 jours',
+        'comment' => "Oui en tous cas, le gaz tellement bon marché qu'il est cadeau, et c'est hyper triste de voir ça sur les enfants du baby-boom (à moins d'une bonne révolution) , j'espère que tu comprends bien que les usagers du métro sont peut-être les seuls réellement concernés . Parler de ça sur internet n'a aucun sens on trouvera toujours des gens pour soutenir les bots russes qui pourrissent tout sans rythmer les débats avec des grosses sorties de route ! Après tout, Microsoft a bien vendu Powerpoint."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '6 jours',
+        'comment' => "Du fait de la fragilité induite, il convient d’avoir à l'esprit parmi les choix du futur, et déjà en notre possession."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '6 jours',
+        'comment' => "Pendant 3 minutes j'avais l'impression que Dieu, ce grand horloger que Nietszche méprisait tant, avait décidé de faire une happy hour, alors si c'est ça qui nous attend, à la fin, je veux bien aller en Enfer en trottinette."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '8 jours',
+        'comment' => "Sérieusement ? Je trouve ça très étonnant et ça me fait pas mal de peine, quand je pense à l'avenir de nos enfants, parce que Zuckerberg ne connait pas plus que toi les récentes études du M.I.T. (tu vois de quoi je parle, quand même ?) , et tu ne pourras pas dire que les amateurs de foot sont déjà bien amochés ... Pardon pour la véhémence de mes propos, mais alors regarde plutôt les politiques qui veulent seulement vendre la peau de l'ours sans l'avoir tué ! Après tout, Microsoft a bien vendu Powerpoint."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '10 jours',
+        'comment' => "Avec la conjoncture générale, je n'exclus pas d’avoir à l'esprit la simultanéité des voies pertinentes, parce qu'il est temps d'agir."],
+
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '10 jours',
+        'comment' => "	Je sais pas si tu as entendu parler de la 'démagnétisation du territoire affectif' chère à Bourdieu, mais là tu nous as offert un sabbat complètement déglingué avec la mer du Nord pour dernier terrain vague."],
+    ];
+
     //équivalent de :
     // foreach ($test as $key => $valeur) {
     //     $$key = $valeur;

@@ -18,7 +18,7 @@ $dataArticles = [
     Cet article est là pour vous aider !',
     'icon' => $icons['general'],
     'author' => 'Florent Vasseur',
-    'date' => '10 SEPT 202',
+    'date' => '10 SEPT 2020',
     'time' => '2 MIN READ',
     'picture' => 'flo',
     'social' => [5, 15,],],
@@ -28,7 +28,7 @@ $dataArticles = [
     plus naturelle qu\'elles n\étaient faites précédemment !',
     'icon' => $icons['php'],
     'author' => 'Jessica Pêcheux',
-    'date' => '10 SEPT 202',
+    'date' => '10 SEPT 2020',
     'time' => '3 MIN READ',
     'picture' => 'jess',
     'social' => [3, 12,],],
@@ -38,7 +38,7 @@ $dataArticles = [
     et l\'évolution récenet de l\'innovation',
     'icon' => $icons['js'],
     'author' => 'Maxence Hattabi',
-    'date' => '10 SEPT 202',
+    'date' => '10 SEPT 2020',
     'time' => '4 MIN READ',
     'picture' => 'maxence',
     'social' => [6, 7,],],
@@ -49,7 +49,7 @@ $dataArticles = [
     c\'est le Gitflow !',
     'icon' => $icons['git'],
     'author' => 'Alexandre Delmotte',
-    'date' => '10 SEPT 202',
+    'date' => '10 SEPT 2020',
     'time' => '5 MIN READ',
     'picture' => 'alexandre',
     'social' => [10, 4,],],
@@ -59,12 +59,17 @@ $dataArticles = [
     Voici quelques ajouts utiles pour travailler avec des formulaires que vous avez peut être manqués...',
     'icon' => $icons['html'],
     'author' => 'Florent Vasseur',
-    'date' => '10 SEPT 202',
+    'date' => '10 SEPT 2020',
     'time' => '2 MIN READ',
     'picture' => 'flo',
     'social' => [5, 15,],],
 ];
 
+$pseudos = ['CyberWar','AmiboThunder','AimMilo','NarutoWorld','BraveVador',
+'LuckI','WhiteEagle','PotatoChicken','WhiteRiver','HealFreestyle',
+'SteakGama','GodzillaBannana','JackpotFrench','WhiteFly','FishFr',
+'LotusRubis','RexRex','GokuWorld','RealitySnake','RiverSmall',
+'TruckCloud','MissTroll','CanardGx','ShieldRiku',];
 
 
 ?>
