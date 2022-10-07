@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" />
 
 </head>
+
 <body>
-<i class="fa-solid fa-phone"></i>
 <?php 
 include '_header.php';
 ?>
@@ -22,12 +22,12 @@ include '_header.php';
     </p></div>
   
   <section class="boxFormulaire">
-  <form method= "post" action="traitement.php"> 
-        <h3>Contactez-nous</h3>                    
+      <form id="inscription" method= "get"> 
+        <div class="titleContact"></div><h3>Contactez-nous</h3></div>                 
         <div class="namesBox">
 
           <div class="formElements">
-            <label for="name">Prénom:</label><br />
+          <label for="name">Prénom:</label><br />
             <input type="text" id="fname"name="firstane" placeholder="John" required>
           </div>
 
@@ -38,7 +38,6 @@ include '_header.php';
         </div>
 
         </div>
-
           <div class="formElements">
             <label for="email">Email:</label><br />
             <input type="text" id="email"name=email placeholder="@" required>
@@ -47,19 +46,26 @@ include '_header.php';
           <div class="formElements">
             <label for="textMessage">Votre message</label><br />
             <textarea id="messageForm" name="Message" placeholder="Saisir votre message" ></textarea><br />
-            <input type="submit" class="button">
+            <!--<input type="submit" class="buttonForm">!-->
+              <button>
+              <span>
+                Envoyer
+              </span>
+            </button>
         </div> 
         
       </form>
 
   </section>
 </main>
-
+  <script src="/script/alertFormulaire.js"></script>
+  
   <?php include 
      '_footer.php';
   ?>
+  
 </body>
 </html>
 
-<!--<button><span>Envoyer</span></button>!-->
+
 
