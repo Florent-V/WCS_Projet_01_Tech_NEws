@@ -1,3 +1,5 @@
+
+
 @import 'style.css';
 
 /*##################################################*/
@@ -23,7 +25,7 @@ h1 {
 
 section {
     color : var(--font-color-1);
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
 section > p {
@@ -72,7 +74,6 @@ div > i:hover {
 .florentv > h2 {
     grid-area: h;
     margin-left: 50% ;
-    padding-bottom: 20%;
     font-size: var(--sub-title);
 }
 
@@ -81,11 +82,12 @@ div > i:hover {
     margin: var(--spacing-5);
     padding: var(--spacing-3);
     text-align: start;
+    padding-bottom: 0;
 }
 
 .florentv > img {
     grid-area: img;
-    margin: 15% auto auto 50%;
+    margin: 20% auto auto 50%;
     max-width: 45%;
     border-radius:50% ;
     background: linear-gradient(to right top, #05c8f9, #0db8e2, 
@@ -106,8 +108,8 @@ div > i:hover {
         "p img"
         "p h" ;
     text-align: end;
-    margin-top: var(--spacing-4);
     gap: var(--spacing-3) ;
+    margin-top: 10%;
 }
 .jessicap > p {
     grid-area: p;
@@ -143,7 +145,7 @@ div > i:hover {
         "img p"
         "h  p" ;
 
-    margin-top: var(--spacing-4);
+    margin-top: 5%;
     gap: var(--spacing-3) ;
 }
 .alexandred > h2 {
@@ -180,7 +182,7 @@ div > i:hover {
         "p img"
         "p h" ;
     text-align: end;
-    margin-top: var(--spacing-4);
+    margin-top: 10%;
     gap: var(--spacing-3) ;   
 }
 .maxenceh > p {
@@ -254,7 +256,7 @@ div > i:hover {
 }
 @media screen and (max-width: 900px) {
     .florentv > img {
-        margin-left: var(--spacing-5);
+        margin: var(--spacing-5);
     }
 }
 
@@ -285,7 +287,8 @@ div > i:hover {
 }
 @media screen and (max-width: 900px) {
     .jessicap > img {
-        margin-right: var(--spacing-5);
+        margin: var(--spacing-5);
+        
     }
 }
 
@@ -306,7 +309,7 @@ div > i:hover {
 }
 @media screen and (max-width: 900px){
     .alexandred > img {
-        margin-left: var(--spacing-5);
+        margin: var(--spacing-5);
     }
 }
 @media screen and (max-width: 900px) {
@@ -343,7 +346,7 @@ div > i:hover {
 }
 @media screen and (max-width: 900px) {
     .maxenceh > img {
-        margin-right: var(--spacing-5);
+        margin: var(--spacing-5);
     }
 }
 
