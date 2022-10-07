@@ -198,6 +198,12 @@ article img {
     color: grey;
 }
 
+label span {
+    color: red;
+    margin-left: var(--spacing-2);
+    display: none;
+}
+
 
 
 @media screen and (min-width: 1024px) {

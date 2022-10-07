@@ -3,6 +3,58 @@
 
     extract($dataArticles[$id-1]);
 
+    $comments = [
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '5 jours',
+        'comment' => "Quoi qu'on dise concernant la conjoncture intrinsèque, il est nécessaire de s'intéresser à la plus grande partie des problématiques imaginables, parce que la nature a horreur du vide."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '6 jours',
+        'comment' => "Pour réagir face à la baisse de confiance contextuelle, il est nécessaire d’anticiper la plus grande partie des problématiques du futur, et déjà en notre possession."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '6 jours',
+        'comment' => "Où que nous mène la morosité présente, nous sommes contraints de gérer la plus grande partie des alternatives envisageables, depuis longtemps."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '8 jours',
+        'comment' => "Quoi qu'on dise concernant la difficulté présente, je suggère fortement d’examiner les principales issues envisageables, avec beaucoup de recul."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '10 jours',
+        'comment' => "Quelle que soit l'inertie générale, on ne peut se passer de se préoccuper de la majorité des stratégies de bon sens, toutes choses étant égales par ailleurs."],
+
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '10 jours',
+        'comment' => "Dans le cas particulier de la crise présente, on ne peut se passer d’appréhender les principales ouvertures emblématiques, parce qu'il s'agit de notre dernière chance."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '10 jours',
+        'comment' => "Où que nous mène la baisse de confiance observée, on ne peut se passer de gérer précisément les problématiques du futur, si l'on veut s'en sortir un jour."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '11 jours',
+        'comment' => "Sauf que là, c'est nous qui sommes Marylin et toi John Wayne, dans un territoire vierge qui reste encore à découvrir, on le sent et on a vu que tu pouvais complètement gérer face à la fosse aux lions médiatiques, entre Quo Vadis et Gladiator."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '12 jours',
+        'comment' => "Du fait de la sinistrose de l'époque actuelle, il serait bon d’uniformiser les relations des ouvertures s'offrant à nous, et déjà en notre possession."],
+    
+        ['picture' => 'default',
+        'pseudo' => $pseudos[array_rand($pseudos)],
+        'date' => '15 jours',
+        'comment' => "Mais laissez-moi rire,  on dirait que tu t'exprimes sans savoir de quoi tu parles réellement… à aucun moment tes idées ne mentionnent la télé-réalité (je serais étonné de constater le résultat dans 15 ans) , et qui n'est pas d'accord pour dire que les cadres sont quand même plus heureux au soleil . Je ne comprends pas pourquoi tu t'énerves, il faut apprendre à supporter les sacro-saints patrons d'Amazon qui créent du boulot sans corroborrer toute cette bien-pensance . Après tout, qui peut prétendre avoir lu tout internet ? "],
+    ];
+
     //équivalent de :
     // foreach ($test as $key => $valeur) {
     //     $$key = $valeur;

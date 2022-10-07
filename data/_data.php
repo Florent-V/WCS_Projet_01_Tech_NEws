@@ -72,31 +72,6 @@ $pseudos = ['CyberWar','AmiboThunder','AimMilo','NarutoWorld','BraveVador',
 'TruckCloud','MissTroll','CanardGx','ShieldRiku',];
 
 
-$comments = [
-    ['picture' => 'default',
-    'pseudo' => $pseudos[array_rand($pseudos)],
-    'date' => '15 jours',
-    'comment' => "Euh excuse-moi, mais c'est quand même frappant niveau logique : j'imagine bien à quel point tu n'as aucune idée de comment se 
-    déroule une éléction vue par les joueurs de foot (et on n'y peut rien…) , et les experts sont unanimes pour dire que Trump & sa clique 
-    n'ont aucune idée des dangers de ce type de dérive . Il faut savoir rester humble, tu n'as aucune info concrète sur les provinciaux qui sont 
-    les seuls à soutenir les opposants à la PMA ! Et sinon, vous, ça va ? "],
-
-    ['picture' => 'default',
-    'pseudo' => $pseudos[array_rand($pseudos)],
-    'date' => '15 jours',
-    'comment' => "	Y'a une telle décharge d'énergie brute dans ce qui vient de se passer que je vais demander à Sinclair de me gifler. 
-    Voilà. Oui, on aurait dit une matinée coquine dans un magasin de bonbons gélifiés avec des hélicoptères et Wagner qui hurle ses amours 
-    métalliques. "],
-
-    ['picture' => 'default',
-    'pseudo' => $pseudos[array_rand($pseudos)],
-    'date' => '15 jours',
-    'comment' => "Considérant l'impasse de la société, nous sommes contraints d’uniformiser la plus grande partie des problématiques imaginables, 
-    en prenant toutes les précautions qui s'imposent."],
-]
-
-
-
 ?>
 
 
