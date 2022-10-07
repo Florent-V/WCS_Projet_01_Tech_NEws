@@ -11,12 +11,14 @@ main {
 }
 
 h1 {
+    font-family: ventography;
     color: var(--font-color-1);
-    font-size: var(--spacing-3);
+    font-size: calc(var(--main-title)*2); 
     text-align: center;
     margin-top: 4%;
     margin-bottom: 4%;
-    text-decoration: underline var(--font-color-1);
+    font-weight: 100;
+    line-height: 0.8;
 }
 
 section {
@@ -51,9 +53,7 @@ div > i:hover {
     linear-gradient(45deg, rgb(11, 4, 57), rgb(8, 172, 201)) border-box;
     border: 3px solid transparent;
     border-radius: 5px;
-    box-shadow: #1D9AF2;
-    -webkit-box-shadow: 0px 0px 300px 19px rgba(35,205,235,1);
-    -moz-box-shadow: 0px 0px 300px 19px rgba(35,205,235,1);
+    box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2 ;
     box-shadow: 0px 0px 300px 19px rgba(35,205,235,1);;
 }
 
@@ -71,8 +71,9 @@ div > i:hover {
 
 .florentv > h2 {
     grid-area: h;
-    margin-left: 55% ;
+    margin-left: 50% ;
     padding-bottom: 20%;
+    font-size: var(--sub-title);
 }
 
 .florentv > p {
@@ -84,10 +85,8 @@ div > i:hover {
 
 .florentv > img {
     grid-area: img;
-    margin: var(--spacing-5);
-    margin-left: 50%;
+    margin: 15% auto auto 50%;
     max-width: 45%;
-    margin-top: 5%;
     border-radius:50% ;
     background: linear-gradient(to right top, #05c8f9, #0db8e2, 
                                 #14a8cc, #1998b6, #1d88a1, 
@@ -117,15 +116,15 @@ div > i:hover {
 }
 .jessicap > h2 {
     grid-area: h;
-    margin-right: 55%;
-    padding-bottom: 20%
+    margin-right: var(--spacing-5);
+    padding-bottom: 20%;
+    font-size: var(--sub-title);
+    margin-left: 5%;
 }
 .jessicap > img {
     grid-area: img;
     max-width: 45%;
-    margin: var(--spacing-5);
-    margin-right: 50%;
-    margin-top: 5%;
+    margin: 25% 50% auto auto;
     border-radius:50% ;
     background: linear-gradient(to right top, #05c8f9, #0db8e2, 
                                 #14a8cc, #1998b6, #1d88a1, 
@@ -149,8 +148,9 @@ div > i:hover {
 }
 .alexandred > h2 {
     grid-area: h;
-    margin-left: 55% ;
+    margin-left: var(--spacing-5) ;
     padding-right: 20px;
+    font-size: var(--sub-title);
 }
 .alexandred > p {
     grid-area: p;
@@ -160,17 +160,15 @@ div > i:hover {
 }
 .alexandred > img {
     grid-area: img;
-    margin: var(--spacing-5);
-    margin-left: 50%;
+    margin: 10% auto auto 50%; 
     max-width: 45%;
-    margin-top: 5%;
     border-radius:50% ;
     background: linear-gradient(to right top, #05c8f9, #0db8e2, 
     #14a8cc, #1998b6, #1d88a1, 
     #107895, #056989, #005a7c, 
     #004772, #003365, #001f55, #0b0742) border-box;
-border: 7px solid transparent;
-box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2 ;
+    border: 7px solid transparent;
+    box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2 ;
 }
 
 
@@ -193,7 +191,8 @@ box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2
 }
 .maxenceh > h2 {
     grid-area: h;
-    margin-right: 55%;
+    margin-right: 50%;
+    font-size: var(--sub-title);
 }
 .maxenceh > img {
     grid-area: img;
@@ -223,7 +222,7 @@ box-shadow: 0px 0px 30px 5px rgba(0, 208, 255, 0.39), 5px 5px 30px 7px #060241a2
     h1{
         display: flex;
         text-align: center;
-        font-size: var(--spacing-4);
+        font-size: calc(var(--main-title)*2);
         justify-content: center;
     }
 }
