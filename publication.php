@@ -19,13 +19,22 @@
 
 
      <main>
-    
-     
- 
-    <h1>Le meilleur de la Veille Tech</h1>
-    <h2>Les meilleurs publications php</h2>
-   
 
+     <div class="nav">
+        <ul>
+            <li><a href="#PHP">PHP</a></li>
+            <li><a href="#JS">JS</a></li>
+            <li> <a href="#CSS">CSS</a></li>
+        </ul>
+    </div>
+
+     
+     <h1>TECH NEWS </h1>
+
+   
+    <div class="titre">
+    <h2 id="PHP"> Découvrer le meilleur de la veille Tech PHP</h2> 
+   </div>
 
     <div class="publication">    
     <div class="article"> 
@@ -79,13 +88,15 @@
 </div>
 </div>
 
-<h2>Les meilleures publications Java Script </h2>
+<div class="titre">
+  <h2 id="JS">Découvrer le meilleur de la veille Tech JavaScript</h2>
+   </div>
 
 <div class="publication">  
 <div  class="article">
 <a class="link"href="https://geekflare.com/fr/best-javascript-frameworks/">Frameworks JavaScript</a>
     <img src="./img/css/framework.png" alt="image logo des frameworks JavaScript">
-     <p class="descripion">Découvrez quelques-uns des meilleurs frameworks pour créer une application moderne en moins de temps.</p>
+     <p class="descripion">Découvrez Les meilleurs frameworks pour créer une application moderne en moins de temps.</p>
     <p class='social'>
                 <span><i class="fa-regular fa-message"></i> 98 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 109 </span>
@@ -103,9 +114,9 @@
     </div>
 
 <div  class="article">
-<a  class="link"href="https://www.infoq.com/fr/news/2020/03/face-api-js/">Face-api.js</a>
+<a  class="link"href="https://www.infoq.com/fr/news/2020/03/face-api-js/">Détéction de visages</a>
     <img src="./img/css/faceapi.jpeg" alt="image de deux visages">
-    <p class="descripion">Le module JavaScript face-api.js implémente des réseaux de neurones convolutifs pour résoudre la détections et la reconnaissance des visages ainsi que la reconnaissance des repères faciaux. L'api face-api.js exploite TensorFlow.js et est optimisé pour le bureau et le web mobile.</p>
+    <p class="descripion">Face-api.js implémente des réseaux de neurones convolutifs pour résoudre la détection des visages.</p>
     <p class='social'>
                 <span><i class="fa-regular fa-message"></i> 35 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 153 </span>
@@ -113,9 +124,9 @@
     </div>
     
 <div  class="article">
-<a class="link"href="https://www.silicon.fr/javascript-change-licence-alignement-w3c-442343.html">JavaScript change de licence : un alignement sur le W3C</a>
+<a class="link"href="https://www.silicon.fr/javascript-change-licence-alignement-w3c-442343.html">JS change de licence </a>
     <img src="./img/css/codejs.jpeg" alt="image de code JavaScrript">
-    <p class="descripion">Fraîchement adoptée, la spécification ECMAScript 2022 adopte une licence plus permissive qui aligne sur celle des standards W3C.</p>
+    <p class="descripion">La spécification ECMAScript 2022 adopte une licence plus permissive qui aligne sur celle des standards W3C.</p>
     <p class='social'>
                <span><i class="fa-regular fa-message"></i> 52 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 198 </span>
@@ -123,9 +134,9 @@
     </div>
 
  <div class="article">
-<a class="link"href="https://www.silicon.fr/javascript-developpeurs-2022-432946.html">JavaScript :que plébiscitent les développeurs en 2022 ?</a>
+<a class="link"href="https://www.silicon.fr/javascript-developpeurs-2022-432946.html">JS: que plébiscitent les dév en 2022 ?</a>
   <img src="./img/css/js2.jpeg" alt="Image statistique">
-    <p class="descripion">Une nouvelle vague de l’étude State of JS est parue. À partir de critères de notoriété, d’intérêt, d’usage et de satisfaction, elle dresse un portrait de l’écosystème JavaScript</p>
+    <p class="descripion">Une nouvelle vague de l’étude State of JS est parue, elle dresse un portrait de l’écosystème JavaScript</p>
     <p class='social'>
                 <span><i class="fa-regular fa-message"></i> 89 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 115 </span>
@@ -133,13 +144,15 @@
     </div>
     </div>
 
-    <h3>Les meilleurs publications CSS</h3>
+    <div class="titre">
+  <h2 id="CSS">Découvrer le meilleur de la veille Tech CSS</h2>
+   </div>
 
     <div class="publication"> 
     <div class="article">
-    <a class="link"href="https://developpeur-freelance.io/blog/reduire-taille-css/">Réduction de la taille du CSS, compression et suppression de classes inutilisées</a>
+    <a class="link"href="https://developpeur-freelance.io/blog/reduire-taille-css/">Réduction de la taille du CSS</a>
     <img src="./img/css/css1.png" alt="image compression du fichiers">
-    <p class="descripion">Cet article va vous expliquer comment réduire la taille de vos fichier CSS.L'intérêt de cela est double, en plus de donner un petit coup de main à la planète, vous allez aussi gagner en performance sur vos sites et application web. </p>
+    <p class="descripion">Reduire la taille de vos fichiers va vous permettre de gagner en performance sur vos sites et application web. </p>
     <p class='social'>
                 <span><i class="fa-regular fa-message"></i> 93 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 151 </span>
@@ -147,9 +160,9 @@
     </div>
 
 <div  class="article">
-<a class="link" href="https://blog.shevarezo.fr/post/2022/01/20/css-speedrun-tester-connaissances-css">CSS Speedrum, un petit jeu pour tester vos connaissances en CSS</a>
+<a class="link" href="https://blog.shevarezo.fr/post/2022/01/20/css-speedrun-tester-connaissances-css">CSS Speedrum: tester vous</a>
     <img src="./img/css/css2.png" alt="image de l'interface du site CSS Speedrum">
-    <p class="descripion">CSS Speedrum est un mini site permettant de tester vos connaissances CSS. Quelques exercices vous sont proposés, dans lesquels vos compétences en terme de sélecteurs CSS seront mises à rude épreuve. </p>
+    <p class="descripion">CSS Speedrum est un mini site permettant de tester vos connaissances CSS. Quelques exercices vous sont proposés.</p>
     <p class='social'>
               <span><i class="fa-regular fa-message"></i> 176 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 108 </span>
@@ -157,9 +170,9 @@
     </div>
 
 <div  class="article">
-<a class="link" href="https://korben.info/apprendre-grilles-css.html">Comment devenir un expert des grilles CSS ?</a>
+<a class="link" href="https://korben.info/apprendre-grilles-css.html">Devenir expert des grilles CSS ?</a>
     <img src="./img/css/css3.jpeg" alt="image qui représente un logo css avec grid">
-    <p class="descripion">Pour les gens qui font de la CSS pour habiller leurs pages web et qui souffrent et qui saignent parce que parfois c’est un peu pris de tête, je vous propose qu’aujourd’hui on s’intéresse au concept de Grilles CSS.</p>
+    <p class="descripion"> Cet article vous propose aujourd’hui de s’intéresser au concept de Grilles CSS.</p>
     <p class='social'>
                 <span><i class="fa-regular fa-message"></i> 72 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 15 </span>
@@ -167,7 +180,7 @@
     </div>
 
 <div  class="article">
-<a class="link" href="https://www.alsacreations.com/actu/lire/1823-quels-framework-methodologie-css-choisir.html">Quels framework et méthodologie CSS choisir ?</a>
+<a class="link" href="https://www.alsacreations.com/actu/lire/1823-quels-framework-methodologie-css-choisir.html">Quels framework CSS choisir ?</a>
     <img src="./img/css/css4.png" alt="image qui représente les différents frameworks CSS">
     <p class="descripion">Cet aricle vous guide et vous explique quelle framework et méthodologie CSS choisir</p>
          <p class='social'>
@@ -177,10 +190,9 @@
     </div>
 
 <div  class="article">
-<a class="link" href="https://www.alsacreations.com/article/lire/1621-responsive-images-srcset.html">Responsive Image : comprendre srcet et sizes</a>
+<a class="link" href="https://www.alsacreations.com/article/lire/1621-responsive-images-srcset.html">Responsive Image: srcet et sizes</a>
     <img src="./img/css/css5.png" alt="image qui represente les dimensions d'une image ">
-    <p class="descripion">Dans cet article, nous allons tenter de mieux comprendre comment fonctionne vraiment srcset.Note : cet article a été initialement rédigé en avril 2014 par Geoffrey Crofte. Il a subi une refonte intégrale en mai 2017 pour se mettre à jour et s'étoffer considérablement. </p>
-    <p class='social'>
+    <p class="descripion">Dans cet article, nous allons tenter de mieux comprendre comment fonctionne vraiment srcset.Note</p>
              <span><i class="fa-regular fa-message"></i> 98 </span>
                 <span><i class="fa-regular fa-thumbs-up"></i> 151 </span>
              </p>
